@@ -1,0 +1,200 @@
+<!--#include file="header.html" -->
+	<div class='csslider1 autoplay '>
+	<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
+	<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
+	<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
+	<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
+	<input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
+
+	<ul>
+		<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+			<img src="img/slides/carousel01.jpg" style="width: 100%;">
+		</div>
+		<li class='num0 img'>
+			<img class="cs_img_enlarge" src='img/slides/carousel01.jpg' alt='3344 Peachtree Atlanta' title='The Parkway Difference' />
+		</li>
+		<li class='num1 img'>
+			<img class="cs_img_enlarge" src='img/slides/carousel02.jpg' alt='Austin' title='Top Tier Sunbelt Cities' />
+		</li>
+		<li class='num2 img'>
+			<img class="cs_img_enlarge" src='img/slides/carousel03.jpg' alt='Charlotte' title='City Center Synergy' />
+		</li>
+	</ul>
+
+	<div class='cs_description'>
+		<label class='num0'>
+			<br/>
+			<span class="cs_descr"><span class="cs_wrapper">The Parkway Difference</span></span>
+		</label>
+		<label class='num1'>
+			<br/>
+			<span class="cs_descr"><span class="cs_wrapper">Top Tier Sunbelt Cities</span></span>
+		</label>
+		<label class='num2'>
+			<br/>
+			<span class="cs_descr"><span class="cs_wrapper">City Center Synergy</span></span>
+		</label>
+	</div>
+		<div class='cs_arrowprev'>
+			<label class='num0' for='cs_slide1_0'></label>
+			<label class='num1' for='cs_slide1_1'></label>
+			<label class='num2' for='cs_slide1_2'></label>
+		</div><!-- .cs_arrowprev -->
+
+		<div class='cs_arrownext'>
+			<label class='num0' for='cs_slide1_0'></label>
+			<label class='num1' for='cs_slide1_1'></label>
+			<label class='num2' for='cs_slide1_2'></label>
+		</div><!-- .cs_arrownext -->
+		
+		<div class='cs_bullets grid_12'>
+			<label class='num0' for='cs_slide1_0'>
+				<span class='cs_point'></span>
+			</label>
+			<label class='num1' for='cs_slide1_1'>
+				<span class='cs_point'></span>
+			</label>
+			<label class='num2' for='cs_slide1_2'>
+				<span class='cs_point'></span>
+			</label>
+		</div><!-- .cs_bullets -->
+</div><!-- .csslider1 .autoplay -->
+
+	</header>
+	<main id="content">
+		<div class="container container_12">
+			<h2 class="grid_12">The Parkway Difference</h2>
+				<p class="grid_7 alpha">Parkway Properties is a real estate investment trust that owns and operates high quality office properties located in top-tier Sunbelt markets. A proud member of the New York Stock Exchange, Parkway focuses on providing exceptional service and innovative workplace solutions to our customers. We value our relationship with every customer regardless of the square footage leased or business operated. That’s the Parkway difference, and it’s in everything we do. It’s our day-to-day attention to detail in the way we serve, the way we enhance assets and the way we invest capital. The details make the difference and allow us to deliver unmatched service for our customers and create long-term value for our shareholders.<br />
+				<a class="red">LEARN MORE ></a></p>
+			<div id="branding" class="omega grid_3">
+				<div id="branding_logo">
+					<div class="hidden">Parkway: Where Business Works</div>
+				</div><!-- #branding_logo -->
+				<div id="pkygreen" class="green">
+					<span class="pkygreen_a">Sustainability at work</span><br />
+					<span class="pkygreen_b">Parkway Green <a class="red" href="/sustainability" title="Go to the Sustainability Section">&#10095;</a></span>
+				</div><!-- #pkygreen -->
+			</div><!-- #branding -->
+
+</main><!-- #content -->
+<div id="news">
+<script>
+
+$(document).ready(function() {
+  var $slider = $('.slider'); // class or id of carousel slider
+  var $slide = 'li'; // could also use 'img' if you're not using a ul
+  var $transition_time = 1000; // 1 second
+  var $time_between_slides = 4000; // 4 seconds
+
+  function slides(){
+    return $slider.find($slide);
+  }
+
+  slides().fadeOut();
+
+  // set active classes
+  slides().first().addClass('active');
+  slides().first().fadeIn($transition_time);
+
+  // auto scroll 
+  $interval = setInterval(
+    function(){
+      var $i = $slider.find($slide + '.active').index();
+
+      slides().eq($i).removeClass('active');
+      slides().eq($i).fadeOut($transition_time);
+
+      if (slides().length == $i + 1) $i = -1; // loop to start
+
+      slides().eq($i + 1).fadeIn($transition_time);
+      slides().eq($i + 1).addClass('active');
+    }
+    , $transition_time +  $time_between_slides 
+  );
+});
+</script>
+
+<div class="container_12">
+	<h2 class="push_1">Latest News</h2>
+		<div class="grid_1">Left Arrow</div>
+			<ul class="slider">
+				<li class="grid_2">Story 1</li>
+				<li class="grid_2">Story 2</li>
+				<li class="grid_2">Story 3</li>
+				<li class="grid_2">Story 4
+				<span>Read More</span>
+				</li>
+			</ul>
+		<div class="grid_1">Right Arrow</div>
+	</div><!-- .container .container_12 -->
+</div><!-- #news -->
+<footer>
+		<div id="footer-content" class="container_12">
+			<div class="grid_2" id="footercol1"><h3>Contact PKY</h3>
+				<ul>
+					<li>
+						<p>General Inquiries<br />
+							Parkway Properties<br />
+							390 N. Orange Avenue<br />
+							Suite 2400<br />
+							Orlando, FL 32801<br />
+							407.650.0593<br />
+							1.800.748.1667<br />
+							<a href="mailto:email@pky.com">email@pky.com</a></p>
+					</li>
+				</ul>
+			</div>
+		<div class="grid_2" id="footercol2"><h3>Available Space</h3>
+			<ul>
+				<li><a href="http://pky.com/available-space/georgia/atlanta">Atlanta, GA</a></li>
+				<li><a href="http://pky.com/available-space/texas/austin">Austin, TX</a></li>
+				<li><a href="http://pky.com/available-space/north-carolina/charlotte">Charlotte, NC</a></li>
+				<li><a href="http://pky.com/available-space/florida/ft-lauderdale/">Ft. Lauderdale</a></li>
+				<li><a href="http://pky.com/available-space/houston/texas">Houston, TX</a></li>
+				<li><a href="http://pky.com/available-space/mississippi/jackson">Jackson, MS</a></li>
+				<li><a href="http://pky.com/available-space/florida/jacksonville">Jacksonville, FL</a></li>
+				<li><a href="http://pky.com/available-space/tennessee/memphis">Memphis, TN</a></li>
+				<li><a href="http://pky.com/available-space/florida/miami">Miami, FL</a></li>
+				<li><a href="http://pky.com/available-space/florida/orlando">Orlando, FL</a></li>
+				<li><a href="http://pky.com/available-space/pennsylvania/philadelphia">Philadelphia, PA</a></li>
+				<li><a href="http://pky.com/available-space/arizona/phoenix">Phoenix, AZ</a></li>
+				<li><a href="http://pky.com/available-space/florida/tampa">Tampa, FL</a></li>
+			</ul>
+		</div><!-- #footercol2 -->
+		<div class="grid_2" id="footercol3"><h3>About PKY</h3>
+			<ul>
+				<li><a href="http://pky.com/about">Who We Are</a></li>
+				<li><a href="http://pky.com/about/leadership">Leadership</a></li>
+				<li><a href="http://pky.com/market-contacts">Market Contacts</a></li>
+				<li><a href="http://pky.com/about/portfolio">Portfolio</a></li>
+				<li><a href="http://pky.com/careers">Careers</a></li>
+				<li><a href="http://pky.com/sustainability">Sustainability</a></li>
+				<li>NYSE: PKY</li>
+			</ul>
+		</div><!-- #footercol3 -->
+		<div class="grid_2" id="footercol4"><h3>Media</h3>
+			<ul>
+				<li><a href="http://pky.com/backgrounder">Backgrounder</a></li>
+				<li><a href="http://pky.com/signature-properties">Signature Properties</a></li>
+				<li><a href="http://corporate.pky.com/Yearlynews.aspx?iid=108213">Releases/News</a></li>
+				<br />
+				<li><a href="http://pky.com/privacy">Privacy Policy</a></li>
+				<li><a href="http://pky.com/terms-and-conditions">Terms and Conditions</a></li>
+			</ul>
+		</div><!-- #footercol4 -->
+		<div class="grid_1" id="footercol5">&nbsp;</h3></div><!-- .footercol5 -->
+		<div class="grid_2" id="footercol6"><h3 class="darker">Customer Login ></h3>
+			<div id="site-search"><h3 class="darker">Search</h3>
+				<ul>
+				<li><form><textarea></textarea><button>Go</button></form></li>
+				<li><p>©2014 Parkway Properties<br />
+				Where Business Works</p></li>
+				</ul>
+				</div><!-- #site-search -->
+			</div><!-- #footercol6 -->
+		</div><!-- #footer-content -->
+</footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
+</html>
