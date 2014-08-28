@@ -20,7 +20,7 @@
 /*  Typography */
 @import url(typography.css); 
 
-body { min-width: 1200px; }
+body { width: 100%; position: absolute; }
 
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
@@ -87,17 +87,17 @@ body { min-width: 1200px; }
 /* Push Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_12 .push_1 { left: 100px; }
-.container_12 .push_2 { left: 200px; }
-.container_12 .push_3 { left: 300px; }
-.container_12 .push_4 { left: 400px; }
-.container_12 .push_5 { left: 500px; }
-.container_12 .push_6 { left: 600px; }
-.container_12 .push_7 { left: 700px; }
-.container_12 .push_8 { left: 800px; }
-.container_12 .push_9 { left: 900px; }
-.container_12 .push_10 { left: 1000px; }
-.container_12 .push_11 { left: 1100px; }
+.container_12 .push_1 { left: 100px; width: 1100px; }
+.container_12 .push_2 { left: 200px; width: 1000px; }
+.container_12 .push_3 { left: 300px; width: 900px; }
+.container_12 .push_4 { left: 400px; width: 800px; }
+.container_12 .push_5 { left: 500px; width: 700px; }
+.container_12 .push_6 { left: 600px; width: 600px; }
+.container_12 .push_7 { left: 700px; width: 500px; }
+.container_12 .push_8 { left: 800px; width: 400px; }
+.container_12 .push_9 { left: 900px; width: 300px; }
+.container_12 .push_10 { left: 1000px; width: 200px; }
+.container_12 .push_11 { left: 1100px; width: 100px; }
 
 /* Pull Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
@@ -118,20 +118,15 @@ body { min-width: 1200px; }
 ----------------------------------------------------------------------------------------------------*/
 
 .clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
-/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
-
 .clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .clearfix:after { clear: both; }
-/*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
-
 .clearfix { zoom: 1; }
 
 /* Layout
 ----------------------------------------------------------------------------------------------------*/
 .hidden { display: none; }
+.left { float: left; }
+.right { float: right; }
 
 header { width: 100%; margin-bottom: 3em; }
 div#watermark_logo { width: 37px; height: 43px; margin-top: .5em; margin-right: 1em; float: left; background: url(../img/sprites.png) no-repeat 0 0; }
@@ -160,19 +155,22 @@ span.pkygreen_a, span.pkygreen_b { position: absolute; }
 span.pkygreen_a { right: 2.2em; }
 span.pkygreen_b { right: 1.25em; font-family: 'futura-pt', Arial, Helvetica, sans-serif; font-style: normal; text-transform: uppercase; }
 
-div#news { width: 100%; height: 135px; background: #d3c8b5; clear: both; display: block; }
-
+div#news { width: 100%; background: #d3c8b5; clear: both; display: block; }
+div#news-wrapper { width: 1300px; height: 135px; padding: 1em 0; margin: 0px auto; overflow: hidden; }
+div#news .grid_10 { float: left; }
+.arrow-left, .arrow-right { width: 42px; height: 103px; background-image: url('../img/sprites.png'); background-repeat: no-repeat; float: left; }
+.arrow-left { margin-right: 15px; background-position: -54px 0; }
+.arrow-right { margin-left: 15px; background-position: -96px 0; }
+div#news h2 { margin-bottom: .5em; text-transform: uppercase; font-weight: 700; }
 .slider {
-  margin: 0; width: 1200px; height: 132px; position: relative; overflow: hidden; }
+  margin: 0; width: 1000px; height: 64px; position: relative; overflow: hidden; }
 
-.slider li {
-  display: none; position: absolute; top: 0; left: 0; }
-  
+.slider li { display: inline; }
+ 
+ ul.slider .grid_2 {
+  color: #6d6e71; font-size: 0.875em; margin: 0; }
+
 footer { width: 100%; height: 318px; position: relative; overflow: auto; background: url('../img/footer-bg.png') repeat-y center; background-size: 100%; color: #9d9b98; }
 div#footer-content { width: 1200px; height: 318px; margin: 0 auto; background: url('../img/footer-content-bg.gif') no-repeat bottom center; }
 div#footercol1,div#footercol2,div#footercol3,div#footercol4,div#footercol5,div#footercol6 { padding: 2em 0; }
 div#footercol6 { padding-left: 2em; }
-
-
-
-
