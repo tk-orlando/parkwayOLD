@@ -3188,7 +3188,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   height: 50px;
-  margin: 0;
+  margin: 0 auto;
   border: 0 none;
 }
 .navbar-collapse {

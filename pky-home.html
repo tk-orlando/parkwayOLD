@@ -1,12 +1,11 @@
 <!--#include file="header.html" -->
-	<div class='csslider1 autoplay '>
+	<!-- <div class='csslider1 autoplay '>
 	<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
 	<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
 	<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
 	<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
 	<input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
-
-	<ul>
+	<!-- <ul>
 		<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
 			<img src="img/slides/carousel01.jpg" style="width: 100%;">
 		</div>
@@ -20,8 +19,7 @@
 			<img class="cs_img_enlarge" src='img/slides/carousel03.jpg' alt='Charlotte' title='City Center Synergy' />
 		</li>
 	</ul>
-
-	<div class='cs_description'>
+	<!-- <div class='cs_description'>
 		<label class='num0'>
 			<br/>
 			<span class="cs_descr"><span class="cs_wrapper"><span class="white sans sixtypx uppercase">The Parkway</span><br /><span class="limegreen serif italic seventytwopx lowercase right">Difference</span></span></span>
@@ -41,13 +39,13 @@
 			<label class='num2' for='cs_slide1_2'></label>
 		</div><!-- .cs_arrowprev -->
 
-		<div class='cs_arrownext'>
+		<!--<div class='cs_arrownext'>
 			<label class='num0' for='cs_slide1_0'></label>
 			<label class='num1' for='cs_slide1_1'></label>
 			<label class='num2' for='cs_slide1_2'></label>
 		</div><!-- .cs_arrownext -->
 		
-		<div class='cs_bullets grid_12'>
+		<!--<div class='cs_bullets grid_12'>
 			<label class='num0' for='cs_slide1_0'>
 				<span class='cs_point'></span>
 			</label>
@@ -58,7 +56,26 @@
 				<span class='cs_point'></span>
 			</label>
 		</div><!-- .cs_bullets -->
-</div><!-- .csslider1 .autoplay -->
+<!--</div><!-- .csslider1 .autoplay -->
+
+<div class="sliderContainer fullWidth clearfix">
+	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+    	<div class="rsContent">
+	        <img class="rsImg" src="img/slides/carousel01.jpg" alt="The Parkway Difference" />
+	        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+      		<h4>This is an animated block, add any number of them to any type of slide</h4>
+      		<p>Put completely anything inside - text, images, inputs, links, buttons.</p>
+    </div>
+	     </div>
+	    <div class="rsContent">
+	        <img class="rsImg" src="img/slides/carousel02.jpg" alt="The Parkway Difference" />
+	     </div>
+	    <div class="rsContent">
+	        <img class="rsImg" src="img/slides/carousel03.jpg" alt="The Parkway Difference" />
+	     </div>
+	</div><!-- #full-width-slider .royalSlider heroSlider rsMinW -->
+</div><!-- .sliderContainer fullWidth clearfix -->
+
 </header>
 
 	<main id="content" class="container_12">
@@ -132,4 +149,4 @@ $(document).ready(function() {
 	<a href="#" titlel="Toggle to additional news stories"><div class="arrow_right"><div class="hidden">Right Arrow</div></div></a>
 </div><!-- #news -->
 </div><!-- #news_wrapper -->
-<!--#include file="footer.html" -->
+<!--#include file="footer-home.html" -->
