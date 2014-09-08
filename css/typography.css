@@ -30,6 +30,6 @@ footer li { font-size: 0.625em; }
 
 /* Market Headers */
 body.market header,
-body.market header#atlanta { height: 224px; margin-bottom: 1.5em; }
+body.market header#atlanta { height: 224px; margin-bottom: 1.5em; overflow: visible; }
 body.market header#atlanta { background: url('../img/headers/header-atlanta-bg.jpg') repeat-x top center; }
 #market_atlanta { width: 1600px; height: 224px; margin: 0 auto; background: url('../img/headers/header-atlanta.jpg') repeat-x top center; }

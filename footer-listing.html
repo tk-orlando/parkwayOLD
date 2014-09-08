@@ -64,27 +64,25 @@
 		</div><!-- #footercol6 -->
 	</div><!-- #footer-content -->
 </footer>
-
-<script id="addJS">jQuery(document).ready(function($) {
-  $('#full-width-slider').royalSlider({
-    imageScaleMode: 'fill',
-	  arrowsNav: true,
-	  arrowsNavAutoHide: false,
-    autoScaleSlider: true, 
-    controlNavigation: 'bullets',
-    transitionType:'fade',
-    loop: true,
-    transitionSpeed: 1000,
-    autoPlay: { 
-     	enabled: true,
-      delay: 4000,
-      pauseOnHover: true
-    }
-  });
-});
-</script>
-
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.royalslider.custom.min.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+    /* initialize slider as usual */
+    $('.royalSlider').royalSlider({
+      keyboardNavEnabled: true,
+      loop: true,
+      transitionType: 'fade',
+      transitionSpeed: 1000,
+      arrowsNav: true,
+      arrowsNavAutoHide: false,
+      autoPlay: { 
+      	enabled: true,
+      	delay: 4000,
+      	pauseOnHover: true
+      }
+    });
+  })
+</script>
 </body>
 </html>
