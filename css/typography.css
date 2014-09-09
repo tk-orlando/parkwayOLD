@@ -9,14 +9,18 @@ p { margin: 0 0 .5em; padding:0; line-height: 1.4; }
 .green { color: #51941f; }
 .limegreen { color: #b9bc10; }
 .white { color: #FFF; }
-.fortyeightpx { font-size: 2.75em; line-height: 1; letter-spacing: 2px; }
-.sixtypx { font-size: 3.75em; line-height: 1; letter-spacing: 3px; }
-.seventytwopx { font-size: 4.5em; line-height: 1; letter-spacing: 4px; }
+.fortyeightpx { font-size: 2.75em; letter-spacing: 2px; }
+.sixtypx { font-size: 3.75em; letter-spacing: 3px; }
+.seventytwopx { font-size: 4.5em; letter-spacing: 4px; }
 .serif { font-family: 'Times New Roman', Times, serif; }
 .sans { font-family: "futura-pt", sans-serif; font-weight: 400; }
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .italic { font-style: italic; }
+.push_84 { left: 84px; }
+.push_300 { left: 300px; }
+.bottom { margin-top: -.1em; }
+.top { }
 
 main#content div.container p { font-size: 0.875em; line-height: 1.6em; }
 section#property h2 { font-size: 1.5em; }
@@ -33,3 +37,22 @@ body.market header,
 body.market header#atlanta { height: 224px; margin-bottom: 1.5em; overflow: visible; }
 body.market header#atlanta { background: url('../img/headers/header-atlanta-bg.jpg') repeat-x top center; }
 #market_atlanta { width: 1600px; height: 224px; margin: 0 auto; background: url('../img/headers/header-atlanta.jpg') repeat-x top center; }
+
+/* Lists */
+section#property_data dd { margin-bottom: .25em; line-height: 1.25; }
+section#property_data dt { margin-top: 1em; } 
+section#property_data dt:first-child { margin-top: 0; } 
+
+/* Icons */
+[href$=".pdf"]:before,
+a[href$=".pdf"]:before,
+a.email:before,
+a.share:before,
+a.print:before,
+a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
+[href$=".pdf"]:before,
+a[href$=".pdf"]:before { background-position: 0 -44px; }
+a.email:before { background-position: 0 -92px; }
+a.share:before { background-position: 0 -108px; }
+a.print:before { background-position: 0 -60px; }
+a.view_map:before { background-position: 0 -76px; }
