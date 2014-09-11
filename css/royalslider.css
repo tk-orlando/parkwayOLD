@@ -55,10 +55,10 @@ img.rsImg {	max-width: none; }
 .rsNoDrag { cursor: auto; }
 .rsLink { left:0; top:0; position:absolute; width:100%; height:100%; display:block; z-index: 20; background: url(blank.gif); }
 
-@media (min-width:1201px) and (max-width:1600px) { 
+/*@media (min-width:1201px) and (max-width:1600px) { 
 .rsABlock { margin: 0; left: 10%; }
-}
+}*/
 
-@media (max-width:1200px) { 
-.rsABlock { width: 100%; margin: 0; left: 1%; }
+@media (max-width:1600px) { 
+.rsABlock { width: 100%; margin: 0; left: 84px; }
 }
