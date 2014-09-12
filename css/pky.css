@@ -246,6 +246,14 @@ table#available_space { font-size: .875em; }
 table#available_space th { width: auto; padding-right: 2em; text-transform: uppercase; } 
 table#available_space tr { margin-left: 1em; }
 table#available_space td { padding: 0 1em; }
+#img_preview {
+    background: #222;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 10px;
+    z-index: 999;
+    border: none;
+}
 
 /* Search Results
 ----------------------------------------------------------------------------------------------------*/
