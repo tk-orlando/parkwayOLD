@@ -207,11 +207,28 @@ section#property p { font-size: 0.95em; }
 div#news h2 { margin-bottom: .5em; text-transform: uppercase; }
 
 
-/* Market Headers */
+/* Market Headers 
+----------------------------------------------------------------------------------------------------*/
+
+/* Global */
 body.market header,
+body.market header#market,
 body.market header#atlanta { height: 224px; margin-bottom: 1.5em; overflow: visible; }
-body.market header#atlanta { background: url('../img/headers/header-atlanta-bg.jpg') repeat-x top center; }
-#market_atlanta { width: 1600px; height: 224px; margin: 0 auto; background: url('../img/headers/header-atlanta.jpg') repeat-x top center; position: relative; }
+
+/* Background Colors Global */
+body.market header#market,
+body.market header#atlanta { background-repeat: repeat-x; background-position: top center; } 
+
+body.market header#market { background-image: url('../img/headers/header-market-bg.jpg'); }
+body.market header#atlanta { background-image: url('../img/headers/header-atlanta-bg.jpg'); }
+
+/* Header Images Global */
+#market_all,
+#market_atlanta { width: 1600px; height: 224px; margin: 0 auto; background-repeat: no-repeat; background-position: top center; position: relative; }
+
+/* Header Images */
+#market_all { background-image: url('../img/headers/header-market.jpg') }
+#market_atlanta { background-image: url('../img/headers/header-atlanta.jpg') }
 
 /* Property Info Global
 ----------------------------------------------------------------------------------------------------*/
@@ -246,7 +263,7 @@ a.share:hover:before { background-position: -16px -108px; }
 #search_results .btn, #property .btn { width: 100%; padding: 0; margin-bottom: 1em; color: #004677; font-weight: 400; text-align: left; background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border-bottom: 1px solid #D9D9D8; border-radius: 0; -webkit-appearance: none; text-transform: uppercase; }
 
 /* ALT BUTTON STYLE */
-#search_results .btn, #property .btn { width: 230px; padding: 1em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; display: block; clear: both; }
+#search_results .btn, #property .btn { width: 230px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; display: block; clear: both; }
 
 #property .btn { border-bottom: 0 none; }
 #search_results .btn:hover,
@@ -335,6 +352,44 @@ div[id*="available_space"] > .grid_12 { margin-left: 0; }
 #search_results section.property_data { margin-bottom: 1em; }
 #search_results section.property_data dt { display: block; float: left; width: 10em; margin-top: 0; }
 #search_results section.property_data dd { margin-left: 10em; }
+
+/* Available Space Map 
+----------------------------------------------------------------------------------------------------*/
+
+.map_image { display: block; width: 1040px; height: 650px; position: relative; background-image: url('../img/map_markets.png'); background-position: 0 0; background-repeat: no-repeat; }
+.map_image .map_link { position: absolute; color: #000; text-transform: uppercase; text-align: left; /* text-align: center; display: block; position: absolute; text-indent: -999em; overflow: hidden;*/ }
+.map_image .map_link:hover { text-decoration: underline; }
+.map_image #phoenix { width: 77px; height: 36px; top: 401px; left: 171px; }
+.map_image #austin { width: 90px; height: 30px; top: 496px; left: 413px; }
+.map_image #houston { width: 102px; height: 33px; top: 529px; left: 444px; }
+.map_image #jackson { width: 73px; height: 29px; top: 447px; left: 621px; }
+.map_image #memphis { width: 75px; height: 23px; top: 378px; left: 634px; }
+.map_image #philadelphia { width: 97px; height: 22px; top: 220px; left: 811px; }
+.map_image #charlotte { width: 94px; height: 35px; top: 353px; left: 796px; }
+.map_image #atlanta { width: 78px; height: 35px; top: 409px; left: 738px; }
+.map_image #jacksonville { width: 150px; height: 15px; top: 488px; left: 814px; }
+.map_image #orlando { width: 122px; height: 20px; top: 528px; left: 816px; }
+.map_image #tampa { width: 68px; height: 12px; top: 550px; left: 744px; }
+.map_image #ft_lauderdale { width: 132px; height: 13px; top: 588px; left: 861px; }
+.map_image #miami { width: 65px; height: 13px; top: 605px; left: 861px; }
+
+a.map_link > div.primary_market, a.map_link > div.secondary_market { letter-spacing: .02em; }
+a.map_link > div.primary_market { font-size: 1.1em; }
+a.map_link > div.secondary_market { font-size: .9em; }
+a.map_link > div.primary_market:hover,
+a.map_link > div.secondary_market:hover { text-decoration: underline; text-shadow: 0 0 3px rgba(255,255,255,1); color: #004677; }
+
+/* City Name Postitioning Tweaks */
+a#austin div, a#houston div, a#memphis div, a#philadelphia div, a#charlotte div, a#atlanta div, a#jacksonville div, a#orlando div, a#tampa div, a#ft_lauderdale div, a#miami div { position: absolute; }
+a#austin div { right: 20px; }
+a#houston div { bottom: 0px; right: 12px; }
+a#memphis div { left: 10px; }
+a#philadelphia div { right: 0; }
+a#charlotte div { top: -6px; }
+a#atlanta div { top: 18px; }
+a#jacksonville div, a#orlando div { left: 25px; }
+a#ft_lauderdale div, a#miami div, a#tampa div { left: 12px; top: -3px; }
+a#miami {  }
 
 /* Footer 
 ----------------------------------------------------------------------------------------------------*/
