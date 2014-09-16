@@ -1,3 +1,5 @@
+	</main><!-- #content -->
+</div><!-- #wrap -->
 <footer>
 	<div id="footer_content" class="container_12">
 		<div id="footercol1"><h3>Contact PKY</h3>
@@ -84,5 +86,38 @@
     });
   })
 </script>
+
+<script type="text/javascript" language="javascript">
+// Kick off the jQuery with the document ready function on page load
+	$(document).ready(function(){
+      imagePreview();
+	});
+// Configuration of the x and y offsets
+	this.imagePreview = function(){
+    xOffset = 123;
+    yOffset = -40;
+	$("a.preview").hover(function(e){
+    this.t = this.title;
+    this.title = "";
+	var c = (this.t != "") ? "<br/>" + this.t : "";
+	var thumbURL = $(this).data('thumbnail');
+     $("body").append("<p id='preview'><img src='"+ thumbURL +"' alt='Image preview' />"+ c +"</p>");
+     $("#preview")
+        .css("top",(e.pageY - xOffset) + "px")
+        .css("left",(e.pageX + yOffset) + "px")
+        .fadeIn("slow");
+    	},
+	function(){
+        this.title = this.t;
+        $("#preview").remove();
+    });
+    $("a.preview").mousemove(function(e){
+        $("#preview")
+            .css("top",(e.pageY - xOffset) + "px")
+            .css("left",(e.pageX + yOffset) + "px");
+    	});
+	};
+</script>
+
 </body>
 </html>
