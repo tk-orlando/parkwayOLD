@@ -118,7 +118,7 @@
 
 /* Globals */
 body { width: 100%; min-width: 1600px; /*position: absolute;*/ }
-header, main#content, div.available_space_wrapper, div#news, footer { margin: 0 auto; width: 100%; position: relative; overflow: visible; }
+header, main#content, div.available_space_wrapper, div.secondary, footer { margin: 0 auto; width: 100%; position: relative; overflow: visible; }
 main#content { overflow: hidden; }
 
 /* Containers
@@ -167,7 +167,7 @@ div.royalSlider > .rsContent { display: none; }
 .sliderContainer { margin-top: -50px; }
 
 .rsOverflow, .rsContainer, img.rsImg.rsMainSlideImage { min-height: 660px; min-width: 1600px; margin-top: 0!important; position: relative; }
-.rsMinW, .rsMinW .rsOverflow { min-height: 660px!important; }
+.rsMinW, .rsMinW .rsOverflow { min-height: 660px!important; max-height: 800px; }
 .slide_copy { width: 80%; height: 9em; position: absolute; bottom: 0; }
 @media (max-width:600px) {
 	.slide_copy { bottom: 3em; }
@@ -190,21 +190,26 @@ span.pkygreen_a, span.pkygreen_b { position: absolute; }
 span.pkygreen_a { right: 2.2em; }
 span.pkygreen_b { right: 1.25em; font-family: 'futura-pt', Arial, Helvetica, sans-serif; font-style: normal; text-transform: uppercase; }
 span.pkygreen_b a:hover { color: #51941f; }
-div#news_wrapper { background: #d3c8b5; }
-div#news { width: 1100px; height: 135px; padding: 1em 0; margin: 0px auto; overflow: hidden; }
-div#news .grid_9 { float: left; }
-.arrow_left, .arrow_right { width: 42px; height: 103px; background-image: url('../img/sprites.png'); background-repeat: no-repeat; float: left; }
-.arrow_left { margin-right: 20px; background-position: -54px 0; }
-.arrow_right { margin-left: 20px; background-position: -96px 0; }
-.slider { margin: 0; width: 1000px; height: 64px; position: relative; overflow: hidden; }
-.slider li { display: inline; }
-ul.slider .grid_2 { font-size: 0.875em; margin: 0; }
+
+div.secondary_wrap { background: #d3c8b5; }
+div.secondary { width: 1100px; /*height: 135px;*/ padding: 1em 0; margin: 0px auto; overflow: hidden; }
+div.secondary .grid_9 { float: left; }
+
+#news .item { padding: 0px; margin: 5px; color: #000; }
+div#news { position: relative; height: 5em; }
+.owl-carousel { position: relative; }
+.owl-carousel .owl-wrapper-outer { overflow: hidden; position: absolute; width: 1000px; left: 72px; margin: 0; }
+.owl-theme .owl-controls { width: 100%; margin-top: 0; position: relative; text-align: left; }
+.owl-buttons { width: 100%; position: relative; }
+.owl-theme .owl-controls .owl-buttons div { width: 42px; height: 103px; padding: 0; background-color: transparent; background-image: url('../img/sprites.png'); background-repeat: no-repeat; float: left; border-radius: 0; opacity: 1; }
+.owl-theme .owl-controls .owl-buttons div.owl-prev { margin-right: 20px; background-position: -54px 0; }
+.owl-theme .owl-controls .owl-buttons div.owl-next { margin-left: 20px; background-position: -96px 0; position: absolute; right: 0; }
 #view_news { position: absolute; bottom: 0; right: 0; font-size: .875em; }
 
 main#content div.container p { font-size: 0.95em; line-height: 1.75em; }
 section#property h2 { font-size: 1.75em; }
 section#property p { font-size: 0.95em; }
-div#news h2 { margin-bottom: .5em; text-transform: uppercase; }
+div.secondary h2 { margin-bottom: .5em; text-transform: uppercase; }
 
 
 /* Market Headers 
@@ -415,10 +420,16 @@ footer h3.darker { color: #6d6e71; }
 footer p, footer li { line-height: 1.4; }
 footer li { font-size: 0.8em; }
 
+/*@media (min-width:1601px) {
+	.sliderContainer { margin-top: -150px; }
+}
+@media (min-width:1400px) {
+	.sliderContainer { margin-top: -100px; }
+}*/
 @media (max-width:1600px) { 
-	div.navbar_wrapper, main#content > div.container_12, div#news, div#news .container_12, div.available_space, div#footer_content { width: auto; padding-left: 1em; }
-	div.navbar_wrapper .pull_1, div#news_wrapper .pull_1  { left: 0; }
+	div.navbar_wrapper, main#content > div.container_12, div.secondary, div.secondary > .container_12, div.available_space, div#footer_content { width: auto; padding-left: 1em; }
+	div.navbar_wrapper .pull_1, div.secondary_wrap .pull_1  { left: 0; }
 	div#watermark_logo { margin-left: 1em; }
-	main#content div.container_12, div.available_space, div#footer_content { padding-left: 84px; }
+	main#content > div.container_12, div.available_space, div#footer_content { padding-left: 84px; }
 	div#footercol6 { float: left; }
 }

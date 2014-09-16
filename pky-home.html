@@ -2,7 +2,7 @@
 <div class="sliderContainer fullWidth clearfix">
 	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
     	<div class="rsContent">
-        <img class="rsImg" src="img/slides/carousel_01.jpg" alt="The Parkway Difference" width="1600" height="660"/>
+        <img class="rsImg" data-rsw="1600" data-rsh="660" src="img/slides/carousel_01.jpg" alt="The Parkway Difference" width="1600" height="660"/>
         <div class="infoBlock rsABlock" data-fade-effect="" data-move-offset="" data-move-effect="" data-speed="">
         	<div class="slide_copy">
 	      		<div class="uppercase seventytwopx white sans top">The Parkway</div>
@@ -11,7 +11,7 @@
     		</div><!-- .infoBlock rsABlock -->
 	    </div><!-- .rsContent -->
 	    <div class="rsContent">
-	      <img class="rsImg" src="img/slides/carousel_02.jpg" alt="Where Business Works" width="1600" height="660" />
+	      <img class="rsImg" data-rsw="1600" data-rsh="660" src="img/slides/carousel_02.jpg" alt="Where Business Works" width="1600" height="660" />
 	      <div class="infoBlock rsABlock" data-fade-effect="" data-move-offset="" data-move-effect="" data-speed="">
 					<div class="slide_copy">
 		      	<div class="lowercase sixtypx limegreen serif italic top">Where Business</div>
@@ -20,7 +20,7 @@
 	      </div><!-- .infoBlock rsABlock -->
 	    </div><!-- .rsContent -->
 	    <div class="rsContent">
-        <img class="rsImg" src="img/slides/carousel_03.jpg" alt="The Parkway Difference" width="1600" height="660" />
+        <img class="rsImg" data-rsw="1600" data-rsh="660" src="img/slides/carousel_03.jpg" alt="The Parkway Difference" width="1600" height="660" />
       	<div class="infoBlock rsABlock" data-fade-effect="" data-move-offset="" data-move-effect="" data-speed="">
 					<div class="slide_copy">
 	      		<div class="lowercase sixtypx limegreen serif italic top">Where Business</div>
@@ -46,59 +46,52 @@
 				</div><!-- #pkygreen -->
 			</div><!-- #branding -->
 		</div><!-- .container_12 -->
-<div id="news_wrapper">
+<div class="secondary_wrap">
 <script>
 
 $(document).ready(function() {
-  var $slider = $('.slider'); // class or id of carousel slider
-  var $slide = 'li'; // could also use 'img' if you're not using a ul
-  var $transition_time = 1000; // 1 second
-  var $time_between_slides = 4000; // 4 seconds
-
-  function slides(){
-    return $slider.find($slide);
-  }
-
-  slides().fadeOut();
-
-  // set active classes
-  slides().first().addClass('active');
-  slides().first().fadeIn($transition_time);
-
-  // auto scroll 
-  $interval = setInterval(
-    function(){
-      var $i = $slider.find($slide + '.active').index();
-
-      slides().eq($i).removeClass('active');
-      slides().eq($i).fadeOut($transition_time);
-
-      if (slides().length == $i + 1) $i = -1; // loop to start
-
-      slides().eq($i + 1).fadeIn($transition_time);
-      slides().eq($i + 1).addClass('active');
-    }
-    , $transition_time +  $time_between_slides 
-  );
+ 
+  var owl = $("#news");
+ 
+  owl.owlCarousel({
+     
+      // itemsCustom : [
+      //   [0, 4],
+      //   [450, 4],
+      //   [600, 4],
+      //   [700, 4],
+      //   [1000, 4],
+      //   [1200, 4],
+      //   [1400, 4],
+      //   [1600, 4]
+      // ],
+      items : 4,
+      navigation : true,
+      pagination : false,
+      autoPlay : true,
+      stopOnHover : true,
+      navigationText : false,
+      rewindNav : false,
+      responsive : false,
+      slideSpeed : 1000
+  });
 });
-</script>
-
-<div id="news" class="pull_1">
-	<a href="#" title="Toggle to additional news stories"><div class="arrow_left"><div class="hidden">Left Arrow</div></div></a>
-		<div class="container_12">
-			<div class="grid_12">
-				<h2>Latest News</h2>
-				<ul class="slider">
-					<li class="grid_2"><a href="#" title="Read entire story">Parkway Announces Quarterly Dividend</a></li>
-					<li class="grid_2"><a href="#" title="Read entire story">Parkway Reports Second Quarter 2014 Results</a></li>
-					<li class="grid_2"><a href="#" title="Read entire story">Parkway Announces 2014 Second Quarter Conference Call</a></li>
-					<li class="grid_2"><a href="#" title="Read entire story">Parkway To Present At REITWeek 2014: NAREIT's Investor Forum</a></li>
-					</li>
-				</ul><!-- .slider -->
+// </script>
+	<div class="secondary pull_1">
+		<!-- <div class="container_12"> -->
+			<h2 class="push_1">Latest News</h2>
+				<div id="news" class="owl-carousel owl-theme">
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway Announces Quarterly Dividend</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway Reports Second Quarter 2014 Results</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway Announces 2014 Second Quarter Conference Call</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway To Present At REITWeek 2014: NAREIT's Investor Forum</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway Announces Quarterly Dividend</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway Reports Second Quarter 2014 Results</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway Announces 2014 Second Quarter Conference Call</a></div>
+				  <div class="item grid_2"><a href="#" title="Read entire story">Parkway To Present At REITWeek 2014: NAREIT's Investor Forum</a></div>
+				</div><!-- #news -->
 			<div id="view_news"><a href="/news" class="uppercase red" title="This will open a new window to view all news stories">View All ></a></div>
-			</div><!-- .grid_12 -->
-		</div><!-- .container_12 -->
-	<a href="#" titlel="Toggle to additional news stories"><div class="arrow_right"><div class="hidden">Right Arrow</div></div></a>
-</div><!-- #news -->
-</div><!-- #news_wrapper -->
+		<!-- </div> --><!-- .container_12 -->
+	</div><!-- .secondary -->
+</div><!-- .secondary_wrap -->
 <!--#include file="footer-home.html" -->
