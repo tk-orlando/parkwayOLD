@@ -24,10 +24,10 @@ color: #FFF; }
 #menu .menu-drop {
 padding-right: 15px; }
 #menu .menu-drop .menu-label {
-padding-right: 18px; background: url("../img/drop1.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s;
+padding-right: 18px; background: url("../img/arrow-down.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s;
 }
 #menu li:hover .menu-drop .menu-label {
-background: url("../img/drop2.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s; }
+background: url("../img/arrow-down-on.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s; }
 
 /* Dropdown */
 #menu .menu-dropdown {
