@@ -146,7 +146,7 @@ div#quick_search_market, div#quick_search_space { margin-top: -2px; }
 div#quick_search p { color: #FFF; }
 keygen, select, select#market, select#sq_footage { width: 11em; background: white; border: 1px solid #9a9a98; padding: 0 0 0 0.5em; -webkit-border-radius: 0 0 0 0; border-radius: 0 0 0 0; color: #b5b5b3; -webkit-appearance: none; }
 div#quick_search_submit a { color: #FFF; width: 40px; height: 20px; display: block; }
-a#search_submit:after { margin-left: .5em; content: url('../img/arrow-go.png') no-repeat 0 0; }
+a#search_submit:after { margin-left: .5em; width: 8px; height: 9px; content: ""; background: url('../img/arrow-go.png') no-repeat 0 0; display: inline-block; }
 span.green.serif.italic.five.lowercase.right { line-height: .5; }
 main.content { width: 100%; }
 body.home .content { margin: 3em auto 0; }
@@ -260,7 +260,9 @@ body.market header { width: 100%; height: 100%; min-height: 480px; background-re
 body.market header#atlanta_market { background-image: url('../img/headers/1200x480/market_atlanta.jpg'); }
 body.market header#austin_market { background-image: url('../img/headers/1200x480/market_austin.jpg'); }
 body.market header#charlotte_market { background-image: url('../img/headers/1200x480/market_charlotte.jpg'); }
-body.market header#ft_lauderdale_market { background-image: url('../img/headers/1200x480/market_jackson.jpg'); }
+body.market header#ft_lauderdale_market { background-image: url('../img/headers/1200x480/market_ft_lauderdale.jpg'); }
+body.market header#houston_market { background-image: url('../img/headers/1200x480/market_houston.jpg'); }
+body.market header#jackson_market { background-image: url('../img/headers/1200x480/market_jackson.jpg'); }
 body.market header#jacksonville_market { background-image: url('../img/headers/1200x480/market_jacksonville.jpg'); }
 body.market header#memphis_market { background-image: url('../img/headers/1200x480/market_memphis.jpg'); }
 body.market header#miami_market { background-image: url('../img/headers/1200x480/market_miami.jpg'); }
@@ -269,8 +271,22 @@ body.market header#philadelphia_market { background-image: url('../img/headers/1
 body.market header#phoenix_market { background-image: url('../img/headers/1200x480/market_phoenix.jpg'); }
 body.market header#tampa_market { background-image: url('../img/headers/1200x480/market_tampa.jpg'); }
 
-/* Market Lead Colors */
-div.orlando { background: #7a3822; overflow: auto; width: 100%; }
+/* Market Lead Divs and Colors */
+div.atlanta, div.austin, div.charlotte, div.ft_lauderdale, div.houston, div.jackson, div.jacksonville, div.memphis, div.miami, div.orlando, div.philadelphia, div.phoenix, div.tampa { overflow: auto; width: 100%; }
+
+div.atlanta { background: #004677; }
+div.austin { background: #6a747c; }
+div.charlotte { background: #517891; }
+div.ft_lauderdale { background: #677977; }
+div.houston { background: #66513d;}
+div.jackson { background: #b57d1e; }
+div.jacksonville { background: #7e7f77; }
+div.memphis { background: #a04d1d; }
+div.miami { background: #677977; }
+div.orlando { background: #7a3822; }
+div.philadelphia { background: #725365; }
+div.phoenix { background: #145d67; }
+div.tampa { background: #4d2f40; }
 
 /* Market Page Available Space Tablesorter */
 table.tablesorter thead tr .header { background-repeat:no-repeat; background-position:center right; cursor:pointer; }
@@ -290,10 +306,13 @@ body.listing header { height: 224px; margin-bottom: 1.5em; overflow: visible; ba
 
 /* Header Backgrounds */
 body.listing header#market { background-image: url('../img/headers/bg/market_bg.jpg'); }
+
 body.listing header#atlanta_listing { background-image: url('../img/headers/bg/atlanta_bg.jpg'); }
 body.listing header#austin_listing { background-image: url('../img/headers/bg/austin_bg.jpg'); }
 body.listing header#charlotte_listing { background-image: url('../img/headers/bg/charlotte_bg.jpg'); }
 body.listing header#ft_lauderdale_listing { background-image: url('../img/headers/bg/ft_lauderdale_bg.jpg'); }
+body.listing header#houston_listing { background-image: url('../img/headers/bg/houston_bg.jpg'); }
+body.listing header#jackson_listing { background-image: url('../img/headers/bg/jackson_bg.jpg'); }
 body.listing header#jacksonville_listing { background-image: url('../img/headers/bg/jacksonville_bg.jpg'); }
 body.listing header#memphis_listing { background-image: url('../img/headers/bg/memphis_bg.jpg'); }
 body.listing header#miami_listing { background-image: url('../img/headers/bg/miami_bg.jpg'); }
@@ -313,7 +332,8 @@ body.listing div[id*="_listing_img"], body.listing div#listing_all { width: 1600
 #austin_listing_img{ background-image: url('../img/headers/1600x224/header_austin.jpg') }
 #charlotte_listing_img { background-image: url('../img/headers/1600x224/header_charlotte.jpg') }
 #houston_listing_img { background-image: url('../img/headers/1600x224/header_atlanta.jpg') }
-#ft_lauderdale_listing_img { background-image: url('../img/headers/1600x224/header_houston.jpg') }
+#ft_lauderdale_listing_img { background-image: url('../img/headers/1600x224/header_ft_lauderdale.jpg') }
+#houston_listing_img { background-image: url('../img/headers/1600x224/header_houston.jpg') }
 #jackson_listing_img { background-image: url('../img/headers/1600x224/header_jackson.jpg') }
 #jacksonville_listing_img { background-image: url('../img/headers/1600x224/header_jacksonville.jpg') }
 #memphis_listing_img { background-image: url('../img/headers/1600x224/header_memphis.jpg') }
@@ -405,7 +425,7 @@ section#tabbed_info { clear: both; display: block; float: none; }
 
 /* Print Page and Back to Top */
 div.right a.print, a.back_to_top { height: 16px; line-height: 1; font-size: .85em; }
-div.right a.print:before, a.back_to_top:before, #search_results .btn:after, #property .btn:after { content: ""; background-image: url('../img/sprites.png'); background-repeat: no-repeat; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); content: ""; }
+div.right a.print:before, a.back_to_top:before, #search_results .btn:after, #property .btn:after { content: ""; background-image: url('../img/sprites.png'); background-repeat: no-repeat; background-attachment: scroll; background-color: rgba(0, 0, 0, 0); }
 
 div.right a.print:before { height: 16px; width: 16px; margin-right: 0.2em; margin-top: 0.2em; padding-left: 16px; background-position: 0 -60px; }
 a.back_to_top:before { height: 8px; width: 9px; margin-right: 6px; padding-left: 9px; background-position: -37px -8px; }
