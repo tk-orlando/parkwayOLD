@@ -1,16 +1,16 @@
 body, h1, h2, h3, h4, p { font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; color: #6d6e71; }
 
-h1 { margin: 0 0 1em; padding: 0; font-size: 1.5em; line-height: 1.6; color: #004677; /*text-transform: uppercase; */}
+h1 { margin: 0 0 1em; padding: 0; font-size: 1.5em; line-height: 1.6; color: #004677; }
 h2 { margin: 0 0 1em; padding: 0; font-size: 1.375em; line-height: 1.5; color: #004677; text-transform: uppercase; letter-spacing: 1px; }
 h3 { margin: 0 0 .75em; padding: 0; font-size: 1.25em; line-height: 1.4; }
 h4 { margin: 0 0 .25em; padding: 0; font-size: 1.125em; line-height: 1.3; font-weight: 500; }
 p { margin: 0 0 1em; padding: 0; font-size: 1em; line-height: 1.4; }
-.blue { color: #004677; }
-.red { color: #b55a36; }
-.green { color: #51941f; }
+strong { font-weight: 500; }
+.blue, a.blue:hover { color: #004677; }
+.red, a.red:hover { color: #b55a36; }
+.green, a.green:hover { color: #51941f; }
 .limegreen { color: #b9bc10; }
-.white { color: #FFF; }
-a.white:hover { color: #FFF; }
+.white, a.white:hover { color: #FFF; }
 .fortyeightpx { font-size: 2.75em; letter-spacing: 2px; }
 .sixtypx { font-size: 3.75em; letter-spacing: 3px; }
 .seventytwopx { font-size: 4.5em; letter-spacing: 4px; }
