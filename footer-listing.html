@@ -1,8 +1,9 @@
 	</main><!-- .content -->
 </div><!-- #wrap -->
 <!--#include file="footer-nav.html" -->
-
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter-2.0.js"></script>
+
 <script type="text/javascript" src="js/jquery.royalslider.custom.min.js"></script>
 <script>
 	jQuery(document).ready(function($) {
@@ -23,7 +24,7 @@
   })
 </script>
 
-<script type="text/javascript" language="javascript">
+<script type="text/javascript">
 // Kick off the jQuery with the document ready function on page load
 	$(document).ready(function(){
       imagePreview();
@@ -53,6 +54,14 @@
             .css("left",(e.pageX + yOffset) + "px");
     	});
 	};
+</script>
+
+<script type="text/javascript" src="js/jquery.fancybox-2.1.3.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
 </script>
 
 </body>

@@ -1,0 +1,124 @@
+.micro li { margin:0 0 5px 16px; line-height:1.3; color:#000; }
+.micro img { margin-top:6px; margin-bottom:20px; }
+.micro .left-sidebar { min-height:450px; background: #fff; }
+
+.micro .right-col-content { background:#FFF; width:564px; min-height:450px; padding-bottom:10%; float:right; }
+.micro .right-col-content ul, .micro .full-width-content ul { margin:0 0 15px; font-size:.875em; line-height:1em; overflow:hidden; }
+.micro td:hover { color:inherit; cursor:inherit; }
+
+/* Quick Links Microsite */
+#quick-links { width:600px; display:block; position:relative; }
+#quick-links li { width:84px; margin:0; padding:0 30px 0 0; text-align:center; line-height:1.1em; float:left; }
+#quick-links li.last { padding:0; }
+#quick-links li img, #quick-links li span { padding:0 10px; margin-bottom:10px;}
+#quick-links li span { float:left; }
+#quick-links a { text-align:center; color:#004677; text-transform:uppercase: }
+#quick-links a:hover { color:#000; text-decoration:underline; }
+
+#slider-micro { width:600px; float:left; overflow:hidden; }
+#slider-micro li.bjqs-slide { margin-left:-16px; }
+
+/* Microsite Left Sidebar */
+.micro > .left-sidebar { width:302px; min-height:390px; padding-bottom:10%; padding:0; }
+.micro > .left-sidebar h2, .left-sidebar-micro h3, .left-sidebar-micro h4, .left-sidebar-micro p { margin:0; padding:0 32px; }
+.micro > .left-sidebar h2, .left-sidebar-micro h3 { margin-top:32px; }
+.micro > .left-sidebar h2 { line-height:1.3em; }
+.micro > .left-sidebar h3 { line-height:1.2em; }
+.micro > .left-sidebar h4 { line-height:1em; }
+.micro > .left-sidebar p { margin-bottom:16px; }
+.micro > .left-sidebar hr { margin:16px 32px; }
+.micro > .left-sidebar h2 + h3 { margin-top:8px; font-size:1.1em; letter-spacing:normal; }
+.micro > .left-sidebar > ul { padding:10px 32px 0; }
+.micro > #building-form > li { text-transform:uppercase; color:#000; }
+.micro > .left-sidebar li a { text-decoration:underline!important; color:#000; }
+
+#tenant-login { padding:0; margin:16px 0 0 -32px; width:320px; background-color:#C4CFCA; text-align:center; float:left; }
+#tenant-login h3 { padding-top:30px; padding-bottom:30px; }
+#tenant-login h3 a { color:#004677; font-size:1.1em; text-decoration:none; text-shadow:1px 1px 1px #FFFFFF; }
+#tenant-login h3 a:hover { text-decoration:underline; }
+
+/* Microsite Local Events */
+ul#local-events { width:90%; margin:0 0 0 -15px!important; }
+ul#forms { width:70%; margin:0 0 0 -15px!important; }
+#local-events li, #forms li { padding-top:10px; border-bottom:1px solid #CCC; }
+#forms li { padding:5px 0 10px; }
+#local-events li:first-child, #forms li:first-child, #rules li:first-child { padding-top:0; }
+#local-events li:last-child, #forms li:last-child, #rules li:last-child { border-bottom:0 none; }
+#forms li img { margin:0 10px 0 0; }
+
+/* Microsite Forms and Documents */
+#forms li { border-bottom:1px solid #CCC; }
+
+/* Microsite Neighborhood Map */
+#map {height:506px; overflow:hidden; }
+/* Idle and Active Maps are the same size */
+#map .gsmsc-idleMapDiv, #map .gsmsc-mapDiv { height:500px; }
+#search-map h3 { margin-top:-3px; line-height:1.2; }
+#poi { margin-top:.5em; }
+h3.hotspot-header { font-size:100%; margin-top:.5em; margin-bottom:.2; }
+div.hotspot { display:block; font-size:100%; font-weight:normal; color:#004677; text-decoration:none; cursor:default; line-height:1.8em; }
+div.hotspot-sep { display:inline; font-size:100%; font-weight:normal; line-height:1.8em; color:#999; }
+.infobox { font-size:.875em; line-height:1.3; }
+.gsmsc-controls { width:280px; }
+.gsmsc-result-list-item { clear:both; }
+.gsmsc-resultsBox div.gsmsc-selected { background-color:#ffffcc; }
+.gsmsc-user-title h3 { margin:0; padding:0 0 5px 0; }
+
+/* Microsite Contacts */
+table#micro-contacts { width:95%; margin-bottom:20px; }
+#micro-contacts td, #micro-contacts th { text-align:left; padding:5px 10px 10px 0; }
+
+/* Microsite Amenities */
+.jump-link { font-size:.875em; margin:0 0 20px; width:80%; }
+section.amenities > h2 { margin:0; }
+.amenities h2 a { color:#000; }
+hr.amenities { margin:15px 0; }
+#amenities { width:90%; }
+.slider-amenities { width: 300px; height: 200px; margin-left: 20px; background: #CCC; float: right; overflow-y: hidden; }
+.slider-amenities li { margin:0 0 0px 0px; line-height:1.3; color:#000; }
+.slider-amenities p.bjqs-caption { margin:0; padding:4% 16px 4% 16px; width:300px; display:block; position:absolute; bottom:0; left:0; }
+
+
+/* Microsite Tables and Collapsible Content Areas */
+.micro .full-width-content table { font-family:Arial, Helvetica, sans-serif; margin:0 0 10px; }
+.micro .full-width-content table td { padding:7px 10px 7px 0; }
+.micro .full-width-content .white-rows td { font-size:1em; line-height:1.1em; padding:3px 0; }
+.micro ol { margin:5px 0 15px; }
+.micro ol li { margin: 0; list-style-type:decimal; list-style-position:outside; font-size:0.875em; }
+
+table#table-restaurants > tbody > tr > th,
+table#table-retail > tbody > tr > th { padding:0; text-align:left; color:#004677; line-height:2; text-transform: uppercase; }
+#table-restaurants > tbody > tr:nth-child(odd),
+#table-retail > tbody > tr:nth-child(odd),
+#table-restaurants > tbody > tr:nth-child(even),
+#table-retail > tbody > tr:nth-child(even) { background:#FFF; color:#000; }
+
+.white-rows > tbody > tr:nth-child(odd),
+.white-rows > tbody > tr:nth-child(even) { background:#FFF; color:#000; }
+
+.micro .collapsible-content ul { font-size:1.2em; }
+li.section, ul#rules li { width:90%; padding:5px 0; border-bottom:1px solid #CCC; }
+ul.nc { margin:10px 0 0 2px!important; }
+.micro ul.collapsible-content .section a span.collapsible-header { font-size:1.3em; text-transform:uppercase; }
+.section { text-decoration:none; }
+.nc li ul li { font-size:0.75em; list-style:square inside none; margin-left:30px; text-indent:-12px;}
+.nc li ol li ul li { font-size: 0.8em; }
+.nc ol li table, .nc ul li table { font-size:1em; }
+
+.collapsible-content > tbody > tr:nth-child(odd),
+.collapsible-content > tbody > tr:nth-child(even) { background:#FFF; color:#000; }
+
+aside > ul.nav-handbook li { margin:0; }
+ul.nav-handbook { margin:20px 0 0 32px; padding:0; list-style:none; }
+ul.nav-handbook li ul { margin:0 0 5px 2px; padding:0; list-style:none; font-size:.9em; font-weight:normal; }
+ul.nav-handbook a, ul.nav-handbook a:link, ul.nav-handbook a:visited { line-height:1.8em; text-decoration:none; }
+ul.nav-handbook a.section,
+ul.collapsible-content a.section { margin-bottom:5px; padding-left:18px; background:url(../img/arrow-up.png) 0 4px no-repeat; font-size:1.1em; line-height:1.5em; }
+ul.nav-handbook a.section.open,
+ul.collapsible-content a.section.open { background:url(../img/arrow-down.png) 0 4px no-repeat; }
+ul.nav-handbook li ul li a { padding-left:16px; font-size:1.1em; text-transform:uppercase; color:#000; }
+ul.collapsible-content li ul li a { padding-left:16px; color:#000; }
+ul.nav-handbook li ul li a.current,
+ul.collapsible-content li ul li a.current { color:#333; }
+ul.nav-handbook a:hover,
+ul.collapsible-content a:hover { text-decoration:underline; }
