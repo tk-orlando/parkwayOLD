@@ -504,9 +504,12 @@ a#ft_lauderdale div, a#miami div { left: 12px; top: -3px; }
 section#corporate, section.office { font-size: .8em; }
 section#corporate h3, section.office h3, section#corporate h3, section.office h4,
 section#corporate p, section.office p { margin-bottom: .5em; line-height: 1.1; }
-section#corporate { padding: 1em 1.5em 0.5em; display: block; overflow: auto; background: #F4EEE1; }
-section#corporate img, section.office img { margin: 0 20px 10px 0; float: left; }
-section.office { overflow: auto; padding: 1.5em 0; }
+section#corporate .panel-heading h2, section.office .panel-heading h3 { margin-bottom: 0; }
+/*section#corporate { padding: 1em 1.5em 0.5em; display: block; overflow: auto; background: #F4EEE1; }
+*/section#corporate img, section.office img { margin: 0 20px 10px 0; float: left; }
+section.office { overflow: auto; padding: 0; }
+section.office .panel { width: 35%; float: left; }
+section#corporate .panel { margin-right: 0; }
 
 /* Miscellaneous
 ----------------------------------------------------------------------------------------------------*/
@@ -517,13 +520,18 @@ table.tablesorter thead tr .headerSortDown { background-image:url(../img/arrow-d
 table.tablesorter thead tr .headerSortUp { background-image:url(../img/arrow-up.png); background-repeat: no-repeat; }
 
 /* Managing Directors and Leadership */
-div#directors img, section.leadership img, section#corporate img, section.office img { margin-top: .5em; margin-bottom: 1em; }
+div#directors img, section.leadership img, section#corporate img, section.office img { margin-top: .2em; margin-bottom: 1em; }
 section.office img { margin-top: .25em; }
 div#directors h3, div#directors p, section.leadership h3, section.leadership p { font-size: 1.125em; line-height: 1.3; }
+section.leadership p { font-size: 1em; }
 
 /* Leadership and Signature Properties */
-section.leadership, section.sig_properties{ display: block; margin-bottom: 30px; overflow: auto; }
+section.leadership, section.sig_properties { overflow: auto; clear: both; display: block; }
 section.leadership img, section.sig_properties img { margin-right: 1em; }
+section.sig_properties .panel { width: 45%; float: left; }
+section.sig_properties .panel-body { min-height: 12em; }
+section.sig_properties .panel p, section.sig_properties .panel h3,
+section.leadership .panel p, section.leadership .panel h3 { margin-bottom: 0; }
 
 /* Careers Page */
 ul.jobs_by_state { margin-bottom: 1em; }
