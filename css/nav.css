@@ -18,7 +18,7 @@ filter: none;	}
 #menu .menu-top .menu-right { 
 float: right; }
 #menu .menu-button {
-display: block; line-height: 1; padding: 2em 1em; color: #FFF; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -ms-transition: color 0.2s; -o-transition: color 0.2s; transition: color 0.2s; text-transform: uppercase; letter-spacing: 1px; }
+display: block; line-height: 1; padding: 2em 1em 1.25em; color: #FFF; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -ms-transition: color 0.2s; -o-transition: color 0.2s; transition: color 0.2s; text-transform: uppercase; letter-spacing: 1px; }
 #menu li:hover .menu-button {
 color: #FFF; }
 #menu .menu-drop {
