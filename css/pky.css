@@ -396,26 +396,21 @@ a.share:hover:before { background-position: -16px -108px; }
 ----------------------------------------------------------------------------------------------------*/
 
 div#property { display: block; position: relative; overflow: auto; }
-div#property_details { width: 642px; margin-right: 2em; float: left; }
+div#property_details { width: 566px; margin-right: 2em; float: left; }
 
 /* Property Page Sliders */
-body.listing div.royalSlider { width: 640px; min-height: 396px; margin-bottom: 3em; border: 2px solid #b1b3b6; background: #525252; overflow: hidden; }
+body.listing div.royalSlider { /*width: 640px; min-height: 566px; padding: .5em 0;*/ width: 566px; height: 566px; padding: 0 0 0 8px; margin-bottom: 3em; /*border: 2px solid #b1b3b6; background: #525252;*/ overflow: hidden; }
 body.listing .rsOverflow, body.listing .rsContainer {
-    width: 642px!important; min-width: 642px!important; max-width: 642px!important; /*height: 396px!important; min-height: 396px!important; max-height: 396px!important;*/ margin-top: 0!important; position: relative; }
-body.listing .rsSlide { width: 636px; }
-body.listing img.rsImg.rsMainSlideImage { margin-top: 0!important; margin-right: auto!important; margin-left: auto!important; position: absolute; left: 0; right: 0; } 
-body.listing .rsMinW, body.market .rsMinW .rsOverflow { /*height: 396px!important; min-height: 396px!important;*/ }
-body.listing .rsMinW, body.market .rsMinW .rsOverflow { /*min-height: 396px!important; max-height: 396px!important;*/ }
-body.listing .property_img { border: 2px solid #b1b3b6; margin-bottom: 3em; }
+    width: 566px!important; min-width: 566px!important; max-width: 566px!important; /*height: 396px!important; min-height: 396px!important; max-height: 396px!important;*/ margin-top: 0!important; position: relative; }
+body.listing .rsSlide { width: 550px; }
+body.listing img.rsImg.rsMainSlideImage { margin: auto!important; position: absolute; left: 0; right: 0; top: 0; bottom: 0; /*margin-top: 0!important; margin-right: auto!important; margin-left: auto!important; position: absolute; left: 0; right: 0;*/ }
 body.listing .rsArrowLeft .rsArrowIcn, 
 body.listing .rsArrowRight .rsArrowIcn { width: 50px; height: 100px; display: block; position: absolute; } 
-body.listing .rsArrowLeft .rsArrowIcn { background: url('../img/arrow-prev.png') no-repeat 0 0; left: 10px; }
-body.listing .rsArrowRight .rsArrowIcn { background: url('../img/arrow-next.png') no-repeat 0 0; right: 4px; }
+body.listing .rsArrowLeft .rsArrowIcn { background: url('../img/arrow-prev.png') no-repeat 0 0; left: 8px; }
+body.listing .rsArrowRight .rsArrowIcn { background: url('../img/arrow-next.png') no-repeat 0 0; right: 16px; }
 body.listing .rsArrowLeft .rsArrowIcn,
-body.listing .rsArrowRight .rsArrowIcn { top: 37%; }
+body.listing .rsArrowRight .rsArrowIcn { /*top: 37%;*/ top: 0; bottom: 0; margin: auto; }
 
-/*body.listing .royalSlider img { width: 100%; height: auto; margin: 10px auto; }
-*/
 /* Tabbed Info */
 section#tabbed_info { clear: both; display: block; float: none; }
 .tab-content { padding-top: 1em; margin-bottom: 2em; padding-right: 1em; }
