@@ -431,7 +431,7 @@ section#tabbed_info { clear: both; display: block; float: none; }
 
 #search_results { margin-bottom: 2em; overflow: hidden; }
 #search_results h3 { font-family: Times, 'Times New Roman', serif; font-style: italic; letter-spacing: 1px; }
-article.property_preview.grid_12 { margin-left: 0; padding-bottom: 1em; margin-bottom: 1.5em; border-bottom: 1px solid #EEE; }
+section.property_preview.grid_12 { margin-left: 0; padding-bottom: 1em; margin-bottom: 1.5em; border-bottom: 1px solid #EEE; }
 div[id*="available_space"] > .grid_12 { margin-left: 0; }
 
 /* Property Image */
