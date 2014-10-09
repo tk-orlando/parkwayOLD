@@ -5,29 +5,20 @@
 #menu a { text-decoration: none; color: #FFF; }
 
 /* Top buttons */
-#menu .menu-top > li {
-float: left; position: relative; text-align: center; -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -ms-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s;
+#menu .menu-top > li { float: left; position: relative; text-align: center; -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -ms-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s;
 }
 #menu .menu-top > li:hover,
-#menu .menu-top > li:focus {
-text-decoration: none; background:rgb(0,0,0); background: transparent\9; background:rgba(0,0,0,0.5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3f000000,endColorstr=#3f000000); zoom: 1;
+#menu .menu-top > li:focus { text-decoration: none; background:rgb(0,0,0); background: transparent\9; background:rgba(0,0,0,0.5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3f000000,endColorstr=#3f000000); zoom: 1;
 -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -ms-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s; }
 
-#menu .menu-top > li:nth-child(n) {
-filter: none;	} 
-#menu .menu-top .menu-right { 
-float: right; }
-#menu .menu-button {
-display: block; line-height: 1; padding: 2em 1em 1.25em; color: #FFF; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -ms-transition: color 0.2s; -o-transition: color 0.2s; transition: color 0.2s; text-transform: uppercase; letter-spacing: 1px; }
-#menu li:hover .menu-button {
-color: #FFF; }
-#menu .menu-drop {
-padding-right: 15px; }
-#menu .menu-drop .menu-label {
-padding-right: 18px; background: url("../img/arrow-down.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s;
+#menu .menu-top > li:nth-child(n) { filter: none; } 
+#menu .menu-top .menu-right { float: right; }
+#menu .menu-button { display: block; line-height: 1; padding: 2em 1em 1.25em; color: #FFF; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -ms-transition: color 0.2s; -o-transition: color 0.2s; transition: color 0.2s; text-transform: uppercase; letter-spacing: 1px; }
+#menu li:hover .menu-button { color: #FFF; }
+#menu .menu-drop { padding-right: 15px; }
+#menu .menu-drop .menu-label { padding-right: 18px; background: url("../img/arrow-down.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s;
 }
-#menu li:hover .menu-drop .menu-label {
-background: url("../img/arrow-down-on.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s; }
+#menu li:hover .menu-drop .menu-label { background: url("../img/arrow-down-on.png") no-repeat right; -webkit-transition: background 0.2s; -moz-transition: background 0.2s; -ms-transition: background 0.2s; -o-transition: background 0.2s; transition: background 0.2s; }
 
 /* Dropdown */
 #menu .menu-dropdown {
@@ -48,35 +39,25 @@ left: 0; opacity: 1; -webkit-transition: opacity 0.2s; -moz-transition: opacity 
 #menu .menu-right:hover .menu-dropdown {
 left: auto; right: 0; }
 #menu .menu-header a { color: #5a6771; }
-#menu .menu-sub {
-margin: 5px 0; }
+#menu .menu-sub { margin: 5px 0; }
+
 /* Dropdown content */
-#menu .menu-sub li {
-white-space: nowrap; -webkit-transition: background-color 0.1s; -moz-transition: background-color 0.1s; -ms-transition: background-color 0.1s; -o-transition: background-color 0.1s; transition: background-color 0.1s; }
-#menu .menu-sub li:hover, #menu .menu-header a:hover {
-text-decoration: underline; }
+#menu .menu-sub li { font-size: .875em; white-space: nowrap; -webkit-transition: background-color 0.1s; -moz-transition: background-color 0.1s; -ms-transition: background-color 0.1s; -o-transition: background-color 0.1s; transition: background-color 0.1s; }
+#menu .menu-sub li:hover, #menu .menu-header a:hover { text-decoration: underline; }
 #menu .menu-subbutton, 
-#menu .menu-header a {
-display: block; padding: 10px 13px; line-height: 1.3; color: #5a6771; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -ms-transition: color 0.2s; -o-transition: color 0.2s; transition: color 0.2s; }
-#menu .menu-subbutton { padding: 3px 13px; }
+#menu .menu-header a { display: block; padding: 10px 13px; line-height: 1.3; color: #5a6771; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; -ms-transition: color 0.2s; -o-transition: color 0.2s; transition: color 0.2s; }
+#menu .menu-subbutton { padding: 0 13px; }
 #menu .menu-subbutton span.menu-label { padding: 0; line-height: .875; }
 #menu .menu-header a { padding: 0 13px; text-transform: uppercase; line-height: 1; }
-#menu .menu-sub li:hover .menu-subbutton {
-text-decoration: underline; }
-#menu hr { margin: 1em 0; border-color: #CCC; }
-/*		#menu .menu-header a > span.menu-label { padding: 0; line-height: 1; }
-*/
-#menu .menu-row {
-vertical-align: text-top; display: inline-block; zoom: 1; *display: inline; }
-#menu .menu-row .menu-sub {
-margin: 0; }
-#menu .menu-row hr + .menu-sub { 
-margin-bottom: 1em; }
-#menu .menu-row hr + .menu-sub:last-child { 
-margin-bottom: 0; } 
-#menu .menu-dropdown-col {
-padding-top: 1em; padding-bottom: .5em; white-space: nowrap; }
-#menu .menu-dropdown-col .menu-row {
-margin: 0; }
-#menu .menu-dropdown-col .menu-row:last-child {
-border-right: none; }
+#menu p.menu-header { margin-bottom: .5em; }
+#menu .menu-sub li:hover .menu-subbutton { text-decoration: underline; }
+#menu hr { margin: .625em 0 0.35em; border-color: #CCC; }
+#menu ul.menu-sub .menu-subbutton span.menu-label { line-height: 1.5; }
+
+#menu .menu-row { vertical-align: text-top; display: inline-block; zoom: 1; *display: inline; }
+#menu .menu-row .menu-sub { margin: 0; }
+#menu .menu-row hr + .menu-sub { margin-bottom: .35em; }
+#menu .menu-row hr + .menu-sub:last-child { margin-bottom: 0; } 
+#menu .menu-dropdown-col { padding-top: .5em; padding-bottom: .5em; white-space: nowrap; }
+#menu .menu-dropdown-col .menu-row { margin: 0; }
+#menu .menu-dropdown-col .menu-row:last-child { border-right: none; }

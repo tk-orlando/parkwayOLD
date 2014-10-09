@@ -131,6 +131,7 @@ main.content > .container_12 { margin-left: auto; margin-right: auto; padding: 0
 .hidden { display: none; }
 .left { float: left; }
 .right { float: right; }
+.alignright { text-align: right; }
 
 div.navbar_wrapper { width: 1104px; margin: 0 auto; position: relative; }
 div#watermark_logo { width: 37px; height: 43px; margin-top: .5em; margin-right: 1em; background: url(../img/sprites.png) no-repeat 0 0; display: inline-block; position: absolute; } 
@@ -244,7 +245,9 @@ div#available_space table > .grid_12,  section#market_space table > .grid_12, di
 body.market div#available_space table th { border-bottom: 1px solid #EEE; }
 
 /* Portfolio Page */
-td.building_name { width: 175px; }
+div#portfolio_assets table.tablesorter tbody tr:nth-child(odd) { background: #fcf7ed; }
+div#portfolio_assets table.tablesorter tbody td { padding: .75em 2em .75em 1em; }
+td.building_name { width: 245px; }
 td.building_sqft { text-align: right; min-width: 100px; }
 
 /* Market Pages
@@ -396,10 +399,10 @@ a.share:hover:before { background-position: -16px -108px; }
 ----------------------------------------------------------------------------------------------------*/
 
 div#property { display: block; position: relative; overflow: auto; }
-div#property_details { width: 566px; margin-right: 2em; float: left; }
+div#property_details { /*width: 566px;*/ margin-right: 2em; float: left; }
 
 /* Property Page Sliders */
-body.listing div.royalSlider { /*width: 640px; min-height: 566px; padding: .5em 0;*/ width: 566px; height: 566px; padding: 0 0 0 8px; margin-bottom: 3em; /*border: 2px solid #b1b3b6; background: #525252;*/ overflow: hidden; }
+body.listing div.royalSlider { /*width: 640px; min-height: 566px; padding: .5em 0;*/ width: 566px; height: 566px; padding: 0 0 0 8px; margin-right: 2em; margin-bottom: 3em; /*border: 2px solid #b1b3b6; background: #525252;*/ overflow: hidden; }
 body.listing .rsOverflow, body.listing .rsContainer {
     width: 566px!important; min-width: 566px!important; max-width: 566px!important; /*height: 396px!important; min-height: 396px!important; max-height: 396px!important;*/ margin-top: 0!important; position: relative; }
 body.listing .rsSlide { width: 550px; }
@@ -412,7 +415,7 @@ body.listing .rsArrowLeft .rsArrowIcn,
 body.listing .rsArrowRight .rsArrowIcn { /*top: 37%;*/ top: 0; bottom: 0; margin: auto; }
 
 /* Tabbed Info */
-section#tabbed_info { clear: both; display: block; float: none; }
+div#tabbed_info { clear: both; display: block; float: none; }
 .tab-content { padding-top: 1em; margin-bottom: 2em; padding-right: 1em; }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { border-radius: 0; }
 .nav-tabs > li > a { margin-right: 0; text-transform: uppercase; color: #004677; letter-spacing: 1px; border-radius: 0; }
@@ -430,7 +433,7 @@ section.property_preview.grid_12 { margin-left: 0; padding-bottom: 1em; margin-b
 div[id*="available_space"] > .grid_12 { margin-left: 0; }
 
 /* Property Image */
-.container_12 #search_results .property_preview_img.grid_3 { height: 148px; width: 230px; background: #CCC; margin-right: 1em; float: left; }
+.container_12 #search_results .property_preview_img.grid_3 { height: 180px; width: 230px; background: #CCC; margin-right: 1em; float: left; }
 
 /* Property Data */
 #search_results div.property_data { margin-bottom: 1em; }
@@ -450,7 +453,7 @@ div.right a.print:hover:before { background-position: -16px -60px; }
 body.map #wrap { background: url('../img/map_bg.png') repeat-y top center #f4eee1; }
 
 /* Placement of Market Names on Map */
-.map_image { width: 810px; height: 520px; position: relative; display: block; background-image: url('../img/map_markets.png'); background-position: 0 0; background-repeat: no-repeat; }
+.map_image { width: 810px; height: 520px; margin-bottom: 1em; position: relative; display: block; background-image: url('../img/map_markets.png'); background-position: 0 0; background-repeat: no-repeat; }
 .map_image .map_link { position: absolute; color: #000; text-transform: uppercase; text-align: left; /* text-align: center; display: block; position: absolute; text-indent: -999em; overflow: hidden;*/ }
 .map_image .map_link:hover { text-decoration: underline; }
 .map_image #phoenix { width: 66px; height: 30px; top: 318px; left: 137px; }
@@ -546,8 +549,16 @@ ul.jobs_by_state li ul li { margin-bottom: 0; }
 .disclaimer { margin: 1em 0 0; font-size: .75em; }
 
 /* Sustainability Collapse Lists */
-div.collapse-group ul { margin-bottom: 1em; }
-div.collapse-group ul li {list-style: square outside; margin-left: 1em; padding-bottom: .5em; }
+div#sustainability_main { margin-left: 1em; }
+div#sustainability_main h3.uppercase { margin-left: -1em; padding: .25em 0 0.25em 1em; }
+div#sustainability_main h3.uppercase:hover { background: #D2F0BC; -webkit-transition: background 500ms ease; -moz-transition: background 500ms ease; -ms-transition: background 500ms ease; -o-transition: background 500ms ease; transition: background 500ms ease; }
+div#sustainability_main h3.uppercase
+div#sustainability_main div.collapse-group ul { margin-bottom: 1em; }
+div#sustainability_main div.collapse-group ul li {list-style: square outside; margin-left: 1em; padding-bottom: .5em; }
+div#sustainability_main p + ul { margin-bottom: 1em; }
+
+/* Portfolio Page Sidebar Well */
+.portfolio_photos { margin-top: 3.7em; margin-right: 1em; }
 
 /* Alerts and Messages 
 ----------------------------------------------------------------------------------------------------*/

@@ -69,10 +69,12 @@ $(".fancybox").fancybox({
     openEffect  : 'none',
     closeEffect : 'none',
     padding: 0,
-    autoResize: true,
-    height: 800,
+    minHeight: 500,
+    maxHeight: 1024,
+    autoCenter: true,
+    // aspectRatio: true,
     iframe : {
-        preload: false
+        preload: true
     }
 });
 </script>
