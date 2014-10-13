@@ -117,7 +117,8 @@
 .clearfix { zoom: 1; }
 
 /* Globals */
-body { width: 100%; min-width: 1200px; /*position: absolute;*/ }
+body, footer { /*width: 100%;*/ min-width: 1200px; float: left; }
+header, footer { min-width: 100%; /*width: 100%;*/ }
 header, main.content, div.available_space_wrapper, div.secondary, footer { margin: 0 auto; width: 100%; position: relative; overflow: visible; }
 main.content { overflow: hidden; }
 
@@ -178,9 +179,6 @@ body.home .sliderContainer { margin-top: -50px; }
 body.home .rsOverflow, body.home .rsContainer, body.home img.rsImg.rsMainSlideImage { min-height: 480px; min-width: 1200px; margin-top: 0!important; position: relative; }
 body.home .rsMinW, body.home .rsMinW .rsOverflow { min-height: 480px!important; max-height: 680px; }
 body.home .slide_copy { width: 80%; height: 9em; position: absolute; bottom: 0; }
-@media (max-width:600px) {
-	body.home .slide_copy { bottom: 3em; }
-}
 body.home .slide_copy > div { position: absolute; }
 body.home .slide_copy > div.top { top: 0; }
 body.home .slide_copy > div.bottom { bottom: 0; }
@@ -596,6 +594,7 @@ main.content { overflow: auto; padding-bottom: 315px; }  /* must be same height 
 footer { position: relative; margin-top: -315px; /* negative value of footer height */ height: 315px; clear: both; } 
 /* Opera Fix */
 body:before { content:""; height: 100%;	float: left; width: 0; margin-top: -32767px;/ }
+
 footer { height: 315px; background: url('../img/footer-bg.png') repeat-y center; background-size: 100%; color: #9d9b98; }
 div#footer_content { width: 1104px; height: 315px; margin: 0 auto; padding: 0; position: relative; background-color: #F4EEE1; }
 div#footercol1, div#footercol2, div#footercol3, div#footercol4, div#footercol5 { width: 10em; padding: 2em 0; float: left; }
@@ -609,16 +608,28 @@ footer h3.darker { color: #6d6e71; }
 footer p, footer li { line-height: 1.4; }
 footer li { font-size: 0.8em; }
 
-@media (min-width:1800px) { body.market header { min-height:780px; } }
-@media (min-width:1700px) and (max-width:1799px) { body.market header { min-height:730px; } }
-@media (min-width:1600px) and (max-width:1699px) { body.market header { min-height:680px; } }
+/* Media Queries
+----------------------------------------------------------------------------------------------------*/
+
+@media (min-width:1800px) { body.market header { 
+	min-height:780px; } 
+}
+@media (min-width:1700px) and (max-width:1799px) { 
+	body.market header { min-height:730px; } 
+}
+@media (min-width:1600px) and (max-width:1699px) { 
+	body.market header { min-height:680px; } 
+}
 @media (min-width:1600px) {
 	div#quick_search_container, #menu { font-size: .9em; }
 	div#quick_search_container { padding: 30px 0 0 1em; }
 }
-@media (min-width:1500px) and (max-width:1599px) { body.market header { min-height:630px; } }
-@media (min-width:1400px) and (max-width:1499px) { body.market header { min-height:580px; } }
-
+@media (min-width:1500px) and (max-width:1599px) { 
+	body.market header { min-height:630px; } 
+}
+@media (min-width:1400px) and (max-width:1499px) { 
+	body.market header { min-height:580px; } 
+}
 @media (max-width:1400px) { 
 	div[id*="_img"] { margin: 0; background-position: -124px 0!important; }
 	div.navbar_wrapper, main.content > div.container_12, div.secondary, div.secondary > .container_12, div.available_space, div.market_callout, div.market_lead .container_12, div.market_lead + section.container_12 { width: auto; }
@@ -630,9 +641,18 @@ footer li { font-size: 0.8em; }
 	div#watermark_logo { margin-left: 1em; }
 	div#footercol6 { float: left; }
 }
-@media (min-width:1300px) and (max-width:1399px) { body.market header { min-height:530px; } }
-@media (min-width:1201px) and (max-width:1299px) { body.market header { min-height:480px; } }
-@media (max-width:1104px) { div#footercol5 { position: relative; } }
+@media (min-width:1300px) and (max-width:1399px) { 
+	body.market header { min-height:530px; } 
+}
+@media (min-width:1201px) and (max-width:1299px) { 
+	body.market header { min-height:480px; } 
+}
+@media (max-width:1024px) {
+	body.home .slide_copy { bottom: 3em; }
+}
+@media (max-width:1104px) { 
+	div#footercol5 { position: relative; } 
+}
 
 /*  Microsites */
 @import url(micro.css); 
