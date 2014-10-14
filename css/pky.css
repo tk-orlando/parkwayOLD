@@ -138,7 +138,7 @@ div.navbar_wrapper { width: 1104px; margin: 0 auto; position: relative; }
 div#watermark_logo { width: 37px; height: 43px; margin-top: .5em; margin-right: 1em; background: url(../img/sprites.png) no-repeat 0 0; display: inline-block; position: absolute; } 
 
 div#uppernav { margin: 0 auto; z-index: 10000; position: relative; }
-div#quick_search_container { padding: 26px 0 0 1em; float: left; width: 55em; display: inline-block; position: absolute; left: 55em; color: #FFF; font-size: .8em; line-height: 1; text-transform: uppercase; letter-spacing: 1px; }
+div#quick_search_container { padding: 26px 0 0 1em; float: left; width: 50em; display: inline-block; position: absolute; left: 55em; color: #FFF; font-size: .8em; line-height: 1; text-transform: uppercase; letter-spacing: 1px; }
 div#quick_search_wrapper { color: transparent; }
 div#quick_search,
 div#quick_search_market,
@@ -176,7 +176,7 @@ body.home div.royalSlider { margin: 0 auto; overflow: hidden; padding: 0; }
 body.home div.royalSlider > .rsContent { display: none; }
 body.home .sliderContainer { margin-top: -50px; }
 
-body.home .rsOverflow, body.home .rsContainer, body.home img.rsImg.rsMainSlideImage { min-height: 480px; min-width: 1200px; margin-top: 0!important; position: relative; }
+body.home .rsOverflow, body.home .rsContainer, body.home img.rsImg.rsMainSlideImage { min-height: 480px; min-width: 1600px; margin-top: 0!important; position: relative; }
 body.home .rsMinW, body.home .rsMinW .rsOverflow { min-height: 480px!important; max-height: 680px; }
 body.home .slide_copy { width: 80%; height: 9em; position: absolute; bottom: 0; }
 body.home .slide_copy > div { position: absolute; }
@@ -252,7 +252,7 @@ td.building_sqft { text-align: right; min-width: 100px; }
 ----------------------------------------------------------------------------------------------------*/
 
 /* Global */
-div.market_callout { margin: 0 auto; width: 1284px; position: absolute; bottom: 0; left: 0; right: 0; } 
+div.market_callout { margin: 0 auto; width: 1284px; height: 130px; position: absolute; bottom: 0; left: 0; right: 0; } 
 div.market_overlay { width: 100%; position: absolute; top: 0; bottom: 0; background: url('../img/market_overlay.png') no-repeat top center; background-size: cover; z-index: 100; }
 div.market_lead .container_12 { margin: 0 auto; overflow: auto; padding: 2em 0 1em; }
 div.market_lead + section.container_12 { margin: 0 auto; width: 1104px; padding: 2em 0; overflow: auto; }
@@ -512,6 +512,7 @@ section#corporate .panel-heading h2, section.office .panel-heading h3 { margin-b
 */section#corporate img, section.office img { margin: 0 20px 10px 0; float: left; }
 section.office { overflow: auto; padding: 0; }
 section.office .panel { width: 35%; float: left; }
+section.office p, section.office h4 { float: right; width: 58%; }
 section#corporate .panel { margin-right: 0; }
 
 /* Managing Directors and Leadership */
@@ -632,23 +633,47 @@ footer li { font-size: 0.8em; }
 }
 @media (max-width:1400px) { 
 	div[id*="_img"] { margin: 0; background-position: -124px 0!important; }
-	div.navbar_wrapper, main.content > div.container_12, div.secondary, div.secondary > .container_12, div.available_space, div.market_callout, div.market_lead .container_12, div.market_lead + section.container_12 { width: auto; }
-	div.navbar_wrapper, div.secondary, div.secondary > .container_12, div.available_space { padding-left: 1em; }
-	main.content > div.container_12, .secondary.container_12, div#footer_content, div.market_callout, div.market_lead .container_12, div.market_lead + section.container_12 { padding-left: 84px; }
+
+	div.navbar_wrapper,
+	main.content > div.container_12,
+	div.secondary,
+	div.secondary > .container_12,
+	div.available_space,
+	div.market_callout,
+	div.market_lead .container_12,
+	div.market_lead + section.container_12 { width: auto; }
+
+	div.navbar_wrapper,
+	div.secondary, div.secondary > .container_12,
+	div.available_space { padding-left: 1em; }
+
+	main.content > div.container_12,
+	.secondary.container_12,
+	div#footer_content,
+	div.market_callout,
+	div.market_lead .container_12,
+	div.market_lead + section.container_12 { padding-left: 84px; }
+
 	div#footer_content { width: 1200px; margin: 0; }
-	div.navbar_wrapper .pull_1, div.secondary_wrap .pull_1  { left: 0; }
-	body.home div.secondary_wrap .pull_1 { width: 100%; left: 0; }
+	div.navbar_wrapper .pull_1,
+	div.secondary_wrap .pull_1,
+	body.home div.secondary_wrap .pull_1 { left: 0; }
+	body.home div.secondary_wrap .pull_1 { width: 100%; }
 	div#watermark_logo { margin-left: 1em; }
 	div#footercol6 { float: left; }
 }
 @media (min-width:1300px) and (max-width:1399px) { 
 	body.market header { min-height:530px; } 
 }
-@media (min-width:1201px) and (max-width:1299px) { 
-	body.market header { min-height:480px; } 
+@media (max-width:1299px) { 
+	body.market header { max-height:480px; background-size: 100% 100%; }
+}
+@media (max-width:1200px) {
+	body { width: 1200px; }
 }
 @media (max-width:1024px) {
 	body.home .slide_copy { bottom: 3em; }
+	body.home .slide_copy .push_84 { left: 0; }
 }
 @media (max-width:1104px) { 
 	div#footercol5 { position: relative; } 

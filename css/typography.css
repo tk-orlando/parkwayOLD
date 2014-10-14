@@ -19,8 +19,8 @@ strong { font-weight: 500; }
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .italic { font-style: italic; }
-.push_84 { left: 84px; }
+.push_84 { left: 84px; position: absolute; }
 .push_300 { left: 300px; }
-.bottom { margin-top: -.1em; }
+.bottom { margin-top: -0.4em; }
 .top { }
 .learn_more { line-height: 2; }

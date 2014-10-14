@@ -30,6 +30,11 @@
 @media (max-width:1600px) {
 	.rsNav.rsBullets { width: 1200px; }
 }
+@media (max-width:1400px) {
+	.rsMinW .rsArrowLeft { left: 5%; }
+	.rsMinW .rsArrowRight { right: 5%; }
+}
 @media (max-width:1024px) {
-	.rsNav.rsBullets { width: 600px; padding: 0; text-align: center; }
+	.rsMinW .rsArrowLeft, .rsMinW .rsArrowRight { display: none!important; }
+	.rsNav.rsBullets { width: 84px; margin-left: 84px; padding: 0; text-align: center; }
 }
