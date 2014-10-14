@@ -117,7 +117,7 @@
 .clearfix { zoom: 1; }
 
 /* Globals */
-body, footer { /*width: 100%;*/ min-width: 1200px; float: left; }
+body, footer { width: 100%; min-width: 1600px; }
 header, footer { min-width: 100%; /*width: 100%;*/ }
 header, main.content, div.available_space_wrapper, div.secondary, footer { margin: 0 auto; width: 100%; position: relative; overflow: visible; }
 main.content { overflow: hidden; }
@@ -611,8 +611,8 @@ footer li { font-size: 0.8em; }
 /* Media Queries
 ----------------------------------------------------------------------------------------------------*/
 
-@media (min-width:1800px) { body.market header { 
-	min-height:780px; } 
+@media (min-width:1800px) { 
+	body.market header { min-height:780px; } 
 }
 @media (min-width:1700px) and (max-width:1799px) { 
 	body.market header { min-height:730px; } 
@@ -652,7 +652,7 @@ footer li { font-size: 0.8em; }
 }
 @media (max-width:1104px) { 
 	div#footercol5 { position: relative; } 
-}
+}*/
 
 /*  Microsites */
 @import url(micro.css); 
