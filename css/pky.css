@@ -117,7 +117,8 @@
 .clearfix { zoom: 1; }
 
 /* Globals */
-body, footer { width: 100%; min-width: 1600px; }
+html { min-width: 1360px; }
+body, footer { width: 100%; }
 header, footer { min-width: 100%; /*width: 100%;*/ }
 header, main.content, div.available_space_wrapper, div.secondary, footer { margin: 0 auto; width: 100%; position: relative; overflow: visible; }
 main.content { overflow: hidden; }
@@ -613,27 +614,26 @@ footer li { font-size: 0.8em; }
 ----------------------------------------------------------------------------------------------------*/
 
 @media (min-width:1800px) { 
-	body.market header { min-height:780px; } 
+	body.market header { min-height:720px; } 
 }
 @media (min-width:1700px) and (max-width:1799px) { 
-	body.market header { min-height:730px; } 
+	body.market header { min-height:685px; } 
 }
 @media (min-width:1600px) and (max-width:1699px) { 
-	body.market header { min-height:680px; } 
+	body.market header { min-height:650px; } 
+}
+@media (min-width:1500px) and (max-width:1599px) { 
+	body.market header { min-height:615px; } 
 }
 @media (min-width:1600px) {
 	div#quick_search_container, #menu { font-size: .9em; }
 	div#quick_search_container { padding: 30px 0 0 1em; }
 }
-@media (min-width:1500px) and (max-width:1599px) { 
-	body.market header { min-height:630px; } 
-}
 @media (min-width:1400px) and (max-width:1499px) { 
-	body.market header { min-height:580px; } 
+	body.market header { min-height:585px; } 
 }
 @media (max-width:1400px) { 
 	div[id*="_img"] { margin: 0; background-position: -124px 0!important; }
-
 	div.navbar_wrapper,
 	main.content > div.container_12,
 	div.secondary,
@@ -642,18 +642,15 @@ footer li { font-size: 0.8em; }
 	div.market_callout,
 	div.market_lead .container_12,
 	div.market_lead + section.container_12 { width: auto; }
-
 	div.navbar_wrapper,
 	div.secondary, div.secondary > .container_12,
 	div.available_space { padding-left: 1em; }
-
 	main.content > div.container_12,
 	.secondary.container_12,
 	div#footer_content,
 	div.market_callout,
 	div.market_lead .container_12,
 	div.market_lead + section.container_12 { padding-left: 84px; }
-
 	div#footer_content { width: 1200px; margin: 0; }
 	div.navbar_wrapper .pull_1,
 	div.secondary_wrap .pull_1,
@@ -663,13 +660,16 @@ footer li { font-size: 0.8em; }
 	div#footercol6 { float: left; }
 }
 @media (min-width:1300px) and (max-width:1399px) { 
-	body.market header { min-height:530px; } 
+	body.market header { min-height:550px; } 
 }
-@media (max-width:1299px) { 
-	body.market header { max-height:480px; background-size: 100% 100%; }
+@media (min-width:1201px) and (max-width:1299px) { 
+	body.market header { min-height:515px; } 
 }
-@media (max-width:1200px) {
-	body { width: 1200px; }
+@media (min-width:1200px) { 
+	body.market header { background-position: 50% 50%; }
+}
+@media (max-width:1200px) { 
+	body.market header { /*max-height:480px;*/ background-position: 50% top; }
 }
 @media (max-width:1024px) {
 	body.home .slide_copy { bottom: 3em; }

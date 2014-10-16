@@ -3,7 +3,7 @@
 .rsMinW .rsOverflow,
 .rsMinW .rsSlide,
 .rsMinW .rsVideoFrameHolder,
-.rsMinW .rsThumbs { background: #FFF; color: #FFF; }
+.rsMinW .rsThumbs { background: #004677; color: #FFF; }
 
 .rsMinW .rsArrow { height: 32px; width: 32px; position: absolute; display: block; cursor: pointer; z-index: 21; }
 .rsMinW .rsArrowLeft { right: 37px; bottom: 7px; }
