@@ -596,6 +596,8 @@ ul.jobs_by_state li b, ul.jobs_by_state strong { padding: 0; margin: .75em 0 .25
 .jobs_by_state > li { line-height: 1.5em; }
 ul.jobs_by_state li ul li { margin-bottom: 0; }
 .disclaimer { margin: 1em 0 0; font-size: .75em; }
+/* Sidebar Well */
+div#careers.well { background-color: #F4EEE1; border-color: #E2DBCD; }
 
 /* Sustainability Collapse Lists */
 div#sustainability_main { margin-left: 1em; }
@@ -606,8 +608,8 @@ div#sustainability_main div.collapse-group ul { margin-bottom: 1em; }
 div#sustainability_main div.collapse-group ul li {list-style: square outside; margin-left: 1em; padding-bottom: .5em; }
 div#sustainability_main p + ul { margin-bottom: 1em; }
 
-/* Portfolio Page Sidebar Well */
-.portfolio_photos { margin-top: 3.7em; margin-right: 1em; }
+/* Portfolio Page Sidebar */
+div#portfolio_photos { margin-top: 3.7em; margin-right: 1em; }
 
 /* About Page Well */
 div#about_photos { overflow: auto; margin: 2em 0; }
