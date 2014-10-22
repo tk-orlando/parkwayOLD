@@ -560,6 +560,13 @@ div#sustainability_main p + ul { margin-bottom: 1em; }
 /* Portfolio Page Sidebar Well */
 .portfolio_photos { margin-top: 3.7em; margin-right: 1em; }
 
+/* About Page Well */
+div#about_photos { overflow: auto; margin: 2em 0; }
+div#about_photos.well { width: 88%; background-color: #F4EEE1; border-color: #E2DBCD; }
+div#about_photos li { display: inline-block; margin-right: 1.5em; } 
+div#about_photos li:last-child { margin-right: 0; }
+div#about_photos li img { float: left; }
+
 /* Alerts and Messages 
 ----------------------------------------------------------------------------------------------------*/
 
