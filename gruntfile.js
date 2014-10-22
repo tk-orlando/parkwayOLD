@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 	        separator: ';'
 	      },
 	      dist: {
-	        src: ['js/**/*.js'],
+	        src: ['js/*.js'],
 	        dest: 'dist/<%= pkg.name %>.js'
 	      }
 	    },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 	      }
 	    },
 	    jshint: {
-	      files: ['Gruntfile.js', 'js/**/*.js', 'test/**/*.js'],
+	      files: ['gruntfile.js', 'js/*.js', 'test/**/*.js'],
 	      options: {
 	        // options here to override JSHint defaults
 	        globals: {
@@ -44,6 +44,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	grunt.registerTask('test', ['jshint']);
-
-	grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+	grunt.registerTask('default', ['uglify', 'jshint', 'watch', 'concat' ]);
 };
