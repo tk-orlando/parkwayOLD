@@ -1,8 +1,45 @@
 /*  Reset CSS */
-@import url(reset.css); 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; line-height:1.4em; vertical-align: baseline; }
+html { height:auto; -ms-overflow-y:scroll; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+img { vertical-align:middle; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+a { color: #9d9b98; text-decoration: none; }
+a:hover { color: #6d6e71; text-decoration: underline; }
 
 /*  Typography */
-@import url(typography.css); 
+body, h1, h2, h3, h4, p { font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; color: #6d6e71; }
+
+h1 { margin: 0 0 1em; padding: 0; font-size: 1.5em; line-height: 1.6; color: #004677; }
+h2 { margin: 0 0 1em; padding: 0; font-size: 1.375em; line-height: 1.5; color: #004677; text-transform: uppercase; letter-spacing: 1px; }
+h3 { margin: 0 0 .75em; padding: 0; font-size: 1.25em; line-height: 1.4; }
+h4 { margin: 0 0 .25em; padding: 0; font-size: 1.125em; line-height: 1.3; font-weight: 500; }
+p { margin: 0 0 1em; padding: 0; font-size: 1em; line-height: 1.4; }
+p.caption { margin: 1em 0; font-size: .875em; line-height: 1.2; }
+strong { font-weight: 500; }
+
+h2.grid_12 { margin-left: 0; text-transform: uppercase; }
+.blue, a.blue:hover { color: #004677; }
+.red, a.red:hover { color: #b55a36; }
+.green, a.green:hover { color: #51941f; }
+.limegreen { color: #cbd802; }
+.white, a.white:hover { color: #FFF; }
+.fortyeightpx { font-size: 2.75em; letter-spacing: 2px; }
+.sixtypx { font-size: 3.75em; letter-spacing: 3px; }
+.seventytwopx { font-size: 4.5em; letter-spacing: 4px; }
+.serif { font-family: 'Times New Roman', Times, serif; }
+.sans { font-family: "futura-pt", sans-serif; font-weight: 400; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.italic { font-style: italic; }
+.push_84 { left: 84px; position: absolute; }
+.push_300 { left: 300px; }
+.bottom { margin-top: -0.4em; }
+.learn_more { line-height: 2; }
 
 /* Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
@@ -292,7 +329,7 @@ div[id*="_img"] { width: 1200px; height: 224px; margin: 0 auto; background-repea
 /* Secondary Page Headers */
 body.listing header#markets, body.map header#markets, body.corporate header#investors, body.corporate header#careers, body.corporate header#about, body.corporate header#leadership, body.corporate header#corporate, body.corporate header#portfolio, body.corporate header#sig_properties {
  background-image: url('../img/headers/bg/header_bg.jpg'); }
- body.corporate header#sustainability { background-image: url('../img/headers/bg/sustainability_bg.jpg'); }
+body.corporate header#sustainability { background-image: url('../img/headers/bg/sustainability_bg.jpg'); }
 /* Investors and Careers Header */
 body.corporate #investors_img, body.corporate #careers_img { background-image: url('../img/headers/1600x224/header_investors.jpg'); }
 /* About Header */
@@ -309,31 +346,33 @@ body.corporate #sig_properties_img { background-image: url('../img/headers/1600x
 /* Property Info Global
 ----------------------------------------------------------------------------------------------------*/
 /* Property Data -- Global */
-div.property_data .grid_2 { margin: 0; }
+div.property_data .grid_4 { width: 400px; }
+div.property_data .grid_2 { margin: 0; width: 50%; }
 div.property_data .grid_2.alpha { padding-right: 1em; }
 div.property_data { font-size: 0.875em; overflow: hidden; } 
 div.property_data dt { margin-top: 1em; color: #004677; text-transform: uppercase; } 
 div.property_data dt:first-child { margin-top: 0; } 
 div.property_data dd { margin-bottom: .25em; line-height: 1.25; }
 /* Icons */
-a.preview { width: 16px; height: 16px; overflow: auto; display: block; }
-a.preview:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
-[href$=".pdf"]:before, a[href$=".pdf"]:before, a.preview:before, a.email:before, a.share:before, a.print:before, a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
-[href$=".pdf"]:focus, a[href$=".pdf"]:focus, a.preview:focus, a.email:focus, a.share::focus, a.print:focus, a.view_map:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
-[href$=".pdf"]:before, a[href$=".pdf"]:before,
+div#property a.preview { width: 16px; height: 16px; overflow: auto; display: block; }
+div#property a.preview:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
+div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before, a.preview:before, a.email:before, a.share:before, a.print:before, a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
+div#property [href$=".pdf"]:focus, div#property a[href$=".pdf"]:focus, a.preview:focus, a.email:focus, a.share::focus, a.print:focus, a.view_map:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
+div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before,
 a.preview:before { background-position: 0 -44px; }
 a.print:before { background-position: 0 -60px; }
 a.view_map:before { background-position: 0 -76px; }
 a.email:before { background-position: 0 -92px; }
 a.share:before { background-position: 0 -108px; }
-[href$=".pdf"]:hover:before, a[href$=".pdf"]:hover:before,
+div#property [href$=".pdf"]:hover:before, div#property a[href$=".pdf"]:hover:before,
 a.preview:hover:before { background-position: -16px -44px; }
 a.print:hover:before { background-position: -16px -60px; }
 a.view_map:hover:before { background-position: -16px -76px; }
 a.email:hover:before { background-position: -16px -92px; }
 a.share:hover:before { background-position: -16px -108px; }
 /* Available Space Buttons */
-#search_results .btn, #property .btn { width: 230px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; display: block; clear: both; }
+#search_results .btn, #property .btn { width: 232px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; border-radius: 0; display: block; clear: both; }
+#search_results .btn { float: left; margin-top: -18px; margin-left: -1px; }
 #property .btn { border-bottom: 0 none; }
 #search_results .btn:hover, #property .btn:hover { color: #6d6e71; text-decoration: underline; }
 #search_results .btn:hover, #property .btn:hover { color: #DEF0FD; text-decoration: underline; }
@@ -345,19 +384,20 @@ a.share:hover:before { background-position: -16px -108px; }
 /* Single Property Listings 
 ----------------------------------------------------------------------------------------------------*/
 div#property { display: block; position: relative; overflow: auto; }
-div#property_details { /*width: 566px;*/ margin-right: 2em; float: left; }
+div#property_details { margin-right: 2em; float: left; }
 /* Property Page Sliders */
-body.listing div.royalSlider { width: 566px; height: 566px; padding: 0 0 0 8px; margin-right: 2em; margin-bottom: 3em; overflow: hidden; }
+body.listing div.royalSlider { width: 480px; height: 480px; padding: 0; margin-right: 2em; margin-bottom: 3em; overflow: hidden; }
 body.listing .rsOverflow, body.listing .rsContainer {
-    width: 566px!important; min-width: 566px!important; max-width: 566px!important; margin-top: 0!important; position: relative; }
-body.listing .rsSlide { width: 550px; }
-body.listing img.rsImg.rsMainSlideImage { margin: auto!important; position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+    width: 480px!important; min-width: 480px!important; max-width: 480px!important; margin-top: 0!important; position: relative; }
+body.listing .rsSlide { width: 470px; }
 body.listing .rsArrowLeft .rsArrowIcn, 
 body.listing .rsArrowRight .rsArrowIcn { width: 50px; height: 100px; display: block; position: absolute; } 
 body.listing .rsArrowLeft .rsArrowIcn { background: url('../img/arrow-prev.png') no-repeat 0 0; left: 8px; }
-body.listing .rsArrowRight .rsArrowIcn { background: url('../img/arrow-next.png') no-repeat 0 0; right: 16px; }
+body.listing .rsArrowRight .rsArrowIcn { background: url('../img/arrow-next.png') no-repeat 0 0; right: 0px; }
 body.listing .rsArrowLeft .rsArrowIcn,
-body.listing .rsArrowRight .rsArrowIcn { /*top: 37%;*/ top: 0; bottom: 0; margin: auto; }
+body.listing .rsArrowRight .rsArrowIcn { top: 0; bottom: 0; margin: auto; }
+body.listing div#property_details .rsNav.rsBullets { display: none; }
+
 /* Tabbed Info */
 div#tabbed_info { clear: both; display: block; float: none; }
 .tab-content { padding-top: 1em; margin-bottom: 2em; padding-right: 1em; }
@@ -375,7 +415,7 @@ div#tabbed_info { clear: both; display: block; float: none; }
 section.property_preview.grid_12 { margin-left: 0; padding-bottom: 1em; margin-bottom: 1.5em; border-bottom: 1px solid #EEE; }
 div[id*="available_space"] > .grid_12 { margin-left: 0; }
 /* Property Image */
-.container_12 #search_results .property_preview_img.grid_3 { height: 180px; width: 230px; background: #CCC; margin-right: 1em; float: left; }
+.container_12 #search_results .property_preview_img.grid_3 { height: 180px; width: 230px; background: #CCC; margin-right: 1em; float: left; overflow: hidden; }
 /* Property Data */
 #search_results div.property_data { margin-bottom: 1em; }
 #search_results div.property_data dt { display: block; float: left; width: 10em; margin-top: 0; }
