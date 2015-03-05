@@ -10,10 +10,8 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 table { border-collapse: collapse; border-spacing: 0; }
 a { color: #9d9b98; text-decoration: none; }
 a:hover { color: #6d6e71; text-decoration: underline; }
-
 /*  Typography */
 body, h1, h2, h3, h4, p { font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; color: #6d6e71; }
-
 h1 { margin: 0 0 1em; padding: 0; font-size: 1.5em; line-height: 1.6; color: #004677; }
 h2 { margin: 0 0 1em; padding: 0; font-size: 1.375em; line-height: 1.5; color: #004677; text-transform: uppercase; letter-spacing: 1px; }
 h3 { margin: 0 0 .75em; padding: 0; font-size: 1.25em; line-height: 1.4; }
@@ -21,7 +19,6 @@ h4 { margin: 0 0 .25em; padding: 0; font-size: 1.125em; line-height: 1.3; font-w
 p { margin: 0 0 1em; padding: 0; font-size: 1em; line-height: 1.4; }
 p.caption { margin: 1em 0; font-size: .875em; line-height: 1.2; }
 strong { font-weight: 500; }
-
 h2.grid_12 { margin-left: 0; text-transform: uppercase; }
 .blue, a.blue:hover { color: #004677; }
 .red, a.red:hover { color: #b55a36; }
@@ -40,56 +37,45 @@ h2.grid_12 { margin-left: 0; text-transform: uppercase; }
 .push_300 { left: 300px; }
 .bottom { margin-top: -0.4em; }
 .learn_more { line-height: 2; }
-
 /* Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 { display: inline; float: left; position: relative; margin-right: 10px; }
 .push_1, .pull_1, .push_2, .pull_2, .push_3, .pull_3, .push_4, .pull_4, .push_5, .pull_5, .push_6, .pull_6, .push_7, .pull_7, .push_8, .pull_8, .push_9, .pull_9, .push_10, .pull_10, .push_11, .pull_11, .push_12, .pull_12 { position: relative; }
-
 /* Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 .alpha { margin-left: 0; }
 .omega { margin-right: 0; }
-
 /* Grid >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 .container_12 .grid_1 { width: 72px; } .container_12 .grid_2 { width: 164px; } .container_12 .grid_3 { width: 256px; } .container_12 .grid_4 { width: 348px; } .container_12 .grid_5 { width: 440px; } .container_12 .grid_6 { width: 532px; } .container_12 .grid_7 { width: 624px; } .container_12 .grid_8 { width: 716px; } .container_12 .grid_9 { width: 808px; } .container_12 .grid_10 { width: 900px; } .container_12 .grid_11 { width: 992px; } .container_12 .grid_12 { width: 1084px; }
-
 /* Prefix Extra Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 /*.container_12*/ .prefix_1 { padding-left: 72px; } /* .container_12 .prefix_2 { padding-left: 184px; } .container_12 .prefix_3 { padding-left: 276px; } .container_12 .prefix_4 { padding-left: 368px; } .container_12 .prefix_5 { padding-left: 460px; } .container_12 .prefix_6 { padding-left: 552px; } .container_12 .prefix_7 { padding-left: 644px; } .container_12 .prefix_8 { padding-left: 736px; } .container_12 .prefix_9 { padding-left: 828px; } .container_12 .prefix_10 { padding-left: 920px; } .container_12 .prefix_11 { padding-left: 1012px; }*/
-
 /* Suffix Extra Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 /*.container_12*/ .suffix_1 { padding-right: 72px; } /*.container_12 .suffix_2 { padding-left: 184px; } .container_12 .suffix_3 { padding-left: 276px; } .container_12 .suffix_4 { padding-left: 368px; } .container_12 .suffix_5 { padding-left: 460px; } .container_12 .suffix_6 { padding-left: 552px; } .container_12 .suffix_7 { padding-left: 644px; } .container_12 .suffix_8 { padding-left: 736px; } .container_12 .suffix_9 { padding-left: 828px; } .container_12 .suffix_10 { padding-left: 920px; } .container_12 .suffix_11 { padding-left: 1012px; }*/
-
 /* Push Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 /*.container_12*/ .push_1 { left: 72px; } /*.container_12 .push_2 { left: 184px; } .container_12 .push_3 { left: 276px; } .container_12 .push_4 { left: 368px; } .container_12 .push_5 { left: 460px; } .container_12 .push_6 { left: 552px; } .container_12 .push_7 { left: 644px; } .container_12 .push_8 { left: 736px;  } .container_12 .push_9 { left: 828px; } .container_12 .push_10 { left: 920px; } .container_12 .push_11 { left: 1012px; }*/
-
 /* Pull Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 /*.container_12*/ .pull_1 { left: -72px; } /*.container_12 .pull_2 { left: -184px; } .container_12 .pull_3 { left: -276px; } .container_12 .pull_4 { left: -368px; } .container_12 .pull_5 { left: -460px; } .container_12 .pull_6 { left: -552px; } .container_12 .pull_7 { left: -644px; } .container_12 .pull_8 { left: -736px; } .container_12 .pull_9 { left: -828px; } .container_12 .pull_10 { left: -920px; } .container_12 .pull_11 { left: -1012px; }*/
-
 /* Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
 .clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
 /* Globals */
 html { min-width: 1360px; }
 body, footer { width: 100%; }
 header, footer { min-width: 100%; /*width: 100%;*/ }
 header, main.content, div.available_space_wrapper, div.secondary, footer { margin: 0 auto; width: 100%; position: relative; overflow: visible; }
 main.content { overflow: hidden; }
-
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
 .container_12, main.content > .container_12 { width: 1104px; }
 main.content > .container_12 { margin-left: auto; margin-right: auto; padding: 0 0 3em; overflow: hidden; }
-
 /* Layout
 ----------------------------------------------------------------------------------------------------*/
 .hidden { display: none; }
@@ -104,7 +90,6 @@ ul#breadcrumb_nav li:after { margin-left: .5em; content: ">"; color: #b55a36; }
 ul#breadcrumb_nav li:last-child:after { display: none; }
 /* White Breadcrumb Separators */
 div.market_lead ul#breadcrumb_nav li:after { color: #FFF; }
-
 /* Header
 ----------------------------------------------------------------------------------------------------*/
 div.navbar_wrapper { width: 1104px; margin: 0 auto; position: relative; }
@@ -123,7 +108,6 @@ a#search_submit:after,
 /* Footer Search Button */ 
 div#site-search a:after { margin-left: .5em; width: 8px; height: 9px; content: ""; background: url('../img/arrow-go.png') no-repeat 0 0; display: inline-block; }
 div#site-search a:after { background: url('../img/arrow-go-dark.png') no-repeat 0 0; }
-
 /* Navigation
 ----------------------------------------------------------------------------------------------------*/
 /* Menu */
@@ -178,7 +162,6 @@ zoom: 1; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; 
 #menu .menu-dropdown-col { padding-top: .5em; padding-bottom: .5em; white-space: nowrap; }
 #menu .menu-dropdown-col .menu-row { margin: 0; }
 #menu .menu-dropdown-col .menu-row:last-child { border-right: none; }
-
 /* Home Page 
 ----------------------------------------------------------------------------------------------------*/
 body.home .content { margin: 3.5em auto 0; }
@@ -228,28 +211,20 @@ body.home div.secondary h2.push_1 { margin-bottom: .25em; left: 62px; }
 .owl-theme .owl-controls .owl-nav div.owl-prev { margin: 0 20px 0 0; background-position: -54px 0; }
 .owl-theme .owl-controls .owl-nav div.owl-next { margin: 0 0 0 20px; background-position: -96px 0; position: absolute; right: 0; }
 #view_news { width: 1104px; font-size: .875em; text-align: right; }
-
 /* Tables
 ----------------------------------------------------------------------------------------------------*/
 /* Global */
 table a { color: #6d6e71; }
-/*div.available_space { width: 1104px; margin: 0 auto; } 
-*//*div#available_space table, */
 section#market_space table, div#property table, div#search_results table, div#portfolio_assets table 
 { font-size: .9em; margin-left: -0.75em; }
-/*div#available_space th, */
 section#market_space th, div#property th, div#search_results th, div#portfolio_assets th 
 { width: auto; padding: 1em 1em 0 0; text-transform: uppercase; color: #004677; font-weight: 500; line-height: 1.1; }
-/*div#available_space table th, */
 section#market_space table th, div#property table th, div#search_results table th, div#portfolio_assets table th 
 { padding-left: 1em; }
-/*div#available_space table td, */
 section#market_space table td, div#property table td, div#search_results table td, div#portfolio_assets table td 
 { padding: 1em 4em 0 1em; font-size: .95em; line-height: 1.25; }
-/*div#available_space table > .grid_12, */
 section#market_space table > .grid_12, div#property table > .grid_12, div#search_results table > .grid_12, div#portfolio_assets table > .grid_12 
 { margin-left: 0; }
-
 /* Property Listing, Market Pages and Search Results Pages */
 div#search_results div#available_suites .grid_12,
 div#property div#available_suites .grid_12 { margin-left: 0; }
@@ -263,7 +238,6 @@ td.building_sqft { text-align: right; min-width: 100px; }
 /* Search Results Description Max Width */
 div#search_results table td { padding: .5em 1em 0 1em; }
 div#search_results table td.space_desc { max-width: 20em; padding-right: 1em; }
-
 /* Market Pages
 ----------------------------------------------------------------------------------------------------*/
 /* Global */
@@ -300,7 +274,6 @@ div.orlando { background: #7a3822; }
 div.philadelphia { background: #725365; }
 div.phoenix { background: #145d67; }
 div.tampa { background: #4c2f48; }
-
 /* Property Listing Pages 
 ----------------------------------------------------------------------------------------------------*/
 /* Global Headers */
@@ -352,38 +325,22 @@ body.corporate #sustainability_img { background-image: url('../img/headers/1600x
 body.corporate #portfolio_img { background-image: url('../img/headers/1600x224/header_portfolio.jpg'); }
 /* Signature Properties Header */
 body.corporate #sig_properties_img { background-image: url('../img/headers/1600x224/header_sig_properties.jpg'); }
-
 /* Property Info Global
 ----------------------------------------------------------------------------------------------------*/
 /* Property Data -- Global */
-/* ==== REMOVE ME ==== 
-div.property_data .grid_2.alpha { padding-right: 1em; }
-==== REMOVE ME ==== */
 div.property_data { font-size: 0.875em; overflow: hidden; } 
 div.property_data dt { margin-top: 1em; color: #004677; text-transform: uppercase; } 
 div.property_data dt:first-child { margin-top: 0; } 
 div.property_data dd { margin-bottom: .25em; line-height: 1.25; }
-
 /* Icons */
-
-/* ==== REMOVE ME ==== */
-div#property a.preview { width: 16px; height: 16px; overflow: auto; display: block; }
-div#property a.preview:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
-/* ==== REMOVE ME ==== */
 div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before, a.preview:before, a.email:before, a.share:before, a.print:before, a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
 div#property [href$=".pdf"]:focus, div#property a[href$=".pdf"]:focus, a.preview:focus, a.email:focus, a.share::focus, a.print:focus, a.view_map:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
 div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before,
-/* ==== REMOVE ME ==== */
-a.preview:before { background-position: 0 -44px; }
-/* ==== REMOVE ME ==== */
 a.print:before { background-position: 0 -60px; }
 a.view_map:before { background-position: 0 -76px; }
 a.email:before { background-position: 0 -92px; }
 a.share:before { background-position: 0 -108px; }
 div#property [href$=".pdf"]:hover:before, div#property a[href$=".pdf"]:hover:before,
-/* ==== REMOVE ME ==== */
-a.preview:hover:before { background-position: -16px -44px; }
-/* ==== REMOVE ME ==== */
 a.print:hover:before { background-position: -16px -60px; }
 a.view_map:hover:before { background-position: -16px -76px; }
 a.email:hover:before { background-position: -16px -92px; }
@@ -392,31 +349,25 @@ a.share:hover:before { background-position: -16px -108px; }
 /* Available Space Buttons 
 ----------------------------------------------------------------------------------------------------*/
 #search_results .btn 
-/* ==== REMOVE ME ==== */, #property .btn /* ==== REMOVE ME ==== */
+/* ==== REMOVE ME ==== *//*, #property .btn*/ /* ==== REMOVE ME ==== */
 { width: 232px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; border-radius: 0; display: block; clear: both; }
-
-/* ==== REMOVE ME ==== */ #search_results .btn { float: left; margin-top: -18px; margin-left: -1px; } /* ==== REMOVE ME ==== */ 
+/* ==== REMOVE ME ==== */ /*#search_results .btn { float: left; margin-top: -18px; margin-left: -1px; }*/ /* ==== REMOVE ME ==== */ 
 #search_results .btn { float: none; margin-top: 0; }
-
-/* ==== REMOVE ME ==== */ #property .btn { border-bottom: 0 none; }  /* ==== REMOVE ME ==== */
+/* ==== REMOVE ME ==== */ /*#property .btn { border-bottom: 0 none; }*/  /* ==== REMOVE ME ==== */
 #search_results .btn:hover 
-/* ==== REMOVE ME ==== */, #property .btn:hover /* ==== REMOVE ME ==== */
+/* ==== REMOVE ME ==== *//*, #property .btn:hover *//* ==== REMOVE ME ==== */
 { color: #6d6e71; text-decoration: underline; }
 #search_results .btn:hover, 
-/* ==== REMOVE ME ==== */ #property .btn:hover /* ==== REMOVE ME ==== */
+/* ==== REMOVE ME ==== */ /*#property .btn:hover*/ /* ==== REMOVE ME ==== */
 { color: #DEF0FD; text-decoration: underline; }
 #search_results .btn:after 
-/* ==== REMOVE ME ==== */, #property .btn:after /* ==== REMOVE ME ==== */
+/* ==== REMOVE ME ==== *//*, #property .btn:after*/ /* ==== REMOVE ME ==== */
 { width: 9px; height: 8px; margin-left: .3em; background-position: -37px 0; display: inline-block; float: none; }
 #search_results .btn:active, #search_results .btn.active, 
-/* ==== REMOVE ME ==== */ #property .btn:active, #property .btn.active /* ==== REMOVE ME ==== */ 
+/* ==== REMOVE ME ==== */ /*#property .btn:active, #property .btn.active*/ /* ==== REMOVE ME ==== */ 
 { box-shadow: 0 0 0; }
 #search_results .btn { padding: .75em; }
 #search_results .btn span { display: block; /*line-height: 1;*/ }
-
-/* Popup Floor Plan Preview
-#preview { min-height: 100px; min-width: 150px; position: absolute; border: 3px solid #d3c8b5; display: none; background-color: #FFF; box-shadow: 0px 0px 5px rgba(103, 115, 130, 1); }
-
 /* Single Property Listings 
 ----------------------------------------------------------------------------------------------------*/
 div#property { display: block; position: relative; overflow: auto; }
@@ -431,8 +382,7 @@ body.listing .rsSlide { opacity: .5;
 	-moz-transition: opacity 1500ms ease-in;
 	-ms-transition: opacity 1500ms ease-in;
 	-o-transition: opacity 1500ms ease-in;
-	transition: opacity 1500ms ease-in; 
-}
+	transition: opacity 1500ms ease-in; }
 body.listing .rsSlide.rsActiveSlide { opacity: 1; 
 	-webkit-transition: opacity 4500ms ease-out;
 	-moz-transition: opacity 4500ms ease-out;
@@ -459,10 +409,8 @@ ol.bjqs-markers li { display: inline; }
 ol.bjqs-markers li a { display: inline-block; width: 10px; height: 10px; padding: 0; margin: 0 3px; background: #F4EEE1; color: #FFF; text-decoration:none; font-size: 0px; box-shadow: 0px 0px 4px rgba(0,0,0,.5); }
 ol.bjqs-markers li.active-marker a, ol.bjqs-markers li a:hover { background: #9d9b98; color: #999; font-size: 0px; }
 ol.bjqs-markers.h-centered { padding: 0; margin: 0; width: 300px; text-align:center; position: absolute; bottom: 1em; }
-
 div.property_data .grid_2 { width: 34%; }
 div.property_data .grid_2.alpha { width: 28%; }
-
 /* Tabbed Info */
 div#tabbed_info { clear: both; display: block; float: none; }
 .tab-content { padding-top: 1em; margin-bottom: 2em; padding-right: 1em; }
@@ -472,7 +420,6 @@ div#tabbed_info { clear: both; display: block; float: none; }
 .nav > li > a { padding: .5em 1em .25em; }
 .nav > li:first-child { margin-left: -1em; }
 .tab-content li { margin-left: 1em; text-indent: -1em; padding-bottom: .5em; list-style: square inside; }
-
 /* Available Suites */
 div#available_suites { overflow: auto; clear: both; }
 div#available_suites h2 { margin-bottom: 0.25em; }
@@ -480,7 +427,6 @@ div#available_suites div.right a.back_to_top { margin-right: 1.25em; }
 div#available_suites h2 { margin-bottom: 0; padding: 1em; background: rgba(0, 70, 119, 0.1); line-height: 1; }
 div#property div#available_suites table { margin-left: 0; }
 div#property div#available_suites th { padding-bottom: 0; }
-
 /* Search Results
 ----------------------------------------------------------------------------------------------------*/
 div#search_results { max-width: 80%; margin-bottom: 2em; overflow: hidden; }
@@ -491,12 +437,10 @@ div[id*="available_space"] { clear: both; }
 div[id*="available_space"] > .grid_12 { margin-left: 0; float: none; clear: both; }
 /* Property Image */
 /* ==== REMOVE ME ==== */
-.container_12 #search_results .property_preview_img.grid_3 { height: 180px; width: 230px; background: #CCC; margin-right: 1em; float: left; overflow: hidden; }
-/* ==== REMOVE ME ==== */
+/*.container_12 #search_results .property_preview_img.grid_3 { height: 180px; width: 230px; background: #CCC; margin-right: 1em; float: left; overflow: hidden; }
+*//* ==== REMOVE ME ==== */
 div#search_results .property_preview_img.grid_2 { height: 162px; width: 135px; background: #CCC; margin-right: 1em; float: left; overflow: hidden; }
-
 /* Search Results Property Data Global Overrides */
-/*#search_results div.property_data { margin-bottom: 1em; }*/
 div#search_results div.property_data dt { display: block; float: left; margin-top: 0; }
 /* Left Column Property Data */
 div#search_results div.property_data.grid_3 dt { width: 6em; }
@@ -512,43 +456,49 @@ div.right a.print:before, a.back_to_top:before, #search_results .btn:after, #pro
 div.right a.print:before { height: 16px; width: 16px; margin-right: 0.2em; margin-top: 0.2em; padding-left: 16px; background-position: 0 -60px; }
 a.back_to_top:before { height: 8px; width: 9px; margin-right: 6px; padding-left: 9px; background-position: -37px -8px; }
 div.right a.print:hover:before { background-position: -16px -60px; }
-
 /* Available Space Map 
 ----------------------------------------------------------------------------------------------------*/
 /* Background */
 body.map #wrap { background: url('../img/map_bg.png') repeat-y top center #f4eee1; }
 /* Placement of Market Names on Map */
-.map_image { width: 810px; height: 520px; margin-bottom: 1em; position: relative; display: block; background-image: url('../img/map_markets.png'); background-position: 0 0; background-repeat: no-repeat; }
-.map_image .map_link { position: absolute; color: #000; text-transform: uppercase; text-align: left; }
-.map_image .map_link:hover { text-decoration: underline; }
-.map_image #phoenix { width: 66px; height: 30px; top: 318px; left: 137px; }
-.map_image #austin { width: 75px; height: 24px; top: 404px; left: 328px; }
-.map_image #houston { width: 88px; height: 29px; top: 430px; left: 356px; }
-.map_image #jackson { width: 58px; height: 26px; top: 360px; left: 500px; }
-.map_image #philadelphia { width: 79px; height: 24px; top: 174px; left: 651px; }
-.map_image #charlotte { width: 78px; height: 30px; top: 284px; left: 639px; }
-.map_image #atlanta { width: 57px; height: 27px; top: 333px; left: 594px; }
-.map_image #jacksonville { width: 130px; height: 20px; top: 394px; left: 657px; }
-.map_image #orlando { width: 102px; height: 19px; top: 426px; left: 657px; }
-.map_image #tampa { width: 70px; height: 17px; top: 445px; left: 590px; }
-.map_image #ft_lauderdale { width: 108px; height: 10px; top: 477px; left: 692px; }
-.map_image #miami { width: 52px; height: 11px; top: 489px; left: 692px; }
+div.map_image { width: 610px; height: 390px; position: relative; display: block; background-image: url('../img/map_markets.png'); background-position: 0 0; background-repeat: no-repeat; }
 /* Market Name Styles */
-a.map_link > div.primary_market, a.map_link > div.secondary_market { letter-spacing: .02em; }
-a.map_link > div.primary_market { font-size: 1em; }
-a.map_link > div.secondary_market { font-size: .8em; }
-a.map_link > div.primary_market:hover, a.map_link > div.secondary_market:hover { text-decoration: underline; text-shadow: 0 0 3px rgba(255,255,255,1); color: #004677; }
+a.map_link { position: absolute; font-weight: 500; font-size: .875em; letter-spacing: .02em; color: #000; text-transform: uppercase; text-align: center; }
+a.map_link { background-image: url('../img/map_flag.gif'); background-repeat: no-repeat; background-position: bottom center; } 
+a.map_link:hover { text-decoration: none; color: #002f56; background-image: url('../img/map_flag_hover.gif'); }
+/* Market Positioning Tweaks */
+a.map_link#phoenix { width: 59px; height: 32px; top: 227px; left: 101px; }
+a.map_link#austin { width: 47px; height: 32px; top: 294px; left: 284px; }
+a.map_link#houston { width: 67px; height: 32px; top: 322px; left: 300px; line-height: 2.75; background-position: top; }
+a.map_link#jackson { width: 58px; height: 32px; top: 261px; left: 360px; }
+a.map_link#philadelphia { width: 85px; height: 32px; top: 118px; left: 502px; }
+a.map_link#charlotte { width: 78px; height: 32px; top: 204px; left: 456px; }
+a.map_link#atlanta { width: 57px; height: 32px; top: 237px; left: 432px; }
+a.map_link#jacksonville { width: 92px; height: 32px; top: 275px; left: 455px; }
+a.map_link#orlando { width: 89px; height: 14px; top: 321px; left: 501px; background-position: left 1px; line-height: 1; }
+a.map_link#tampa { width: 70px; height: 14px; top: 326px; left: 427px; line-height: 1; background-position: right; }
+a.map_link#ft_lauderdale { width: 138px; height: 14px; top: 345px; left: 524px; background-position: left 1px; line-height: 1; }
+a.map_link#miami { width: 66px; height: 16px; top: 360px; left: 524px; background-position: left 1px; line-height: 1; }
 /* Market Name Postitioning Tweaks */
-a#austin div, a#houston div, a#philadelphia div, a#charlotte div, a#atlanta div, a#jacksonville div, a#orlando div, a#tampa div, a#ft_lauderdale div, a#miami div { position: absolute; }
-a#austin div { right: 20px; }
-a#houston div { bottom: 0px; right: 12px; }
-a#philadelphia div { right: 0; }
-a#charlotte div { top: -6px; }
-a#atlanta div { top: 18px; }
-a#jacksonville div { left: 22px; }
-a#orlando div { left: 27px; }
-a#tampa div { top: -3px; }
-a#ft_lauderdale div, a#miami div { left: 12px; top: -3px; }
+/*a.map_link#houston {  }
+a#austin, a#houston, a#philadelphia, a#charlotte, a#atlanta, a#jacksonville, a#orlando, a#tampa, a#ft_lauderdale { position: absolute; }
+a#phoenix { top: 227px; left: 94px; }
+a#austin { right: 20px; }
+a#houston { bottom: 0px; right: 12px; }
+a#philadelphia { right: 0; }
+a#charlotte { top: -6px; }
+a#atlanta { top: 18px; }
+a#jacksonville { left: 22px; }
+a#orlando { left: 27px; }
+a#tampa { top: -3px; }
+a#miami div { left: 12px; top: -3px; }*/
+/* Portfolio Page Sidebar */
+div#portfolio_photos { margin-top: 3.7em; margin-right: 1em; text-align: center; }
+div#portfolio_photos img { margin-bottom: .5em; }
+/* Alternate Portfolio Template Overrides */
+.map_image { height: 392px; }
+div#portfolio_photos { width: 125px; margin-top: 0; }
+div#portfolio_assets th { padding-top: 0; }
 /* Available Markets Sidebar */
 #available_markets dl { margin-right: 1em; margin-left: 1em; border-left: 1px solid white; }
 #available_markets dl:first-child { border-left: 0; }
@@ -556,7 +506,6 @@ a#ft_lauderdale div, a#miami div { left: 12px; top: -3px; }
 #available_markets dd { padding-left: 9em; padding-bottom: .25em; margin-bottom: .25em; font-size: .9em; }
 #available_markets dd:last-child { border-bottom: 0 none; }
 #available_markets a { color: #000; }
-
 /* Market Contacts, Leadership and Signature Properties  
 ----------------------------------------------------------------------------------------------------*/
 section#corporate p, 
@@ -571,12 +520,10 @@ section.office { overflow: auto; padding: 0; }
 section.office .panel { width: 35%; float: left; }
 section.office p, section.office h4 { float: right; width: 58%; }
 section#corporate .panel { margin-right: 0; }
-
 /* Managing Directors and Leadership */
 div#directors img, section.leadership img, section#corporate img, section.office img { margin-top: .2em; margin-bottom: 1em; }
 section.office img { margin-top: .25em; }
 div#directors h3, div#directors p, section.leadership h3, section.leadership p { line-height: 1.2; }
-
 /* Leadership and Signature Properties */
 section.leadership, section.sig_properties { overflow: auto; clear: both; display: block; }
 section.leadership img, section.sig_properties img { margin-right: 1em; }
@@ -585,7 +532,6 @@ section.sig_properties .panel-body { min-height: 12em; }
 section.sig_properties .panel p, section.sig_properties .panel h3,
 section.leadership .panel p, section.leadership .panel h3 { margin-bottom: 0; }
 section.leadership .panel p { font-size: 1em; margin-bottom: .5em; }
-
 /* Miscellaneous
 ----------------------------------------------------------------------------------------------------*/
 /* Market Page Available Space Tablesorter */
@@ -611,16 +557,12 @@ div#sustainability_main h3.uppercase
 div#sustainability_main div.collapse-group ul { margin-bottom: 1em; }
 div#sustainability_main div.collapse-group ul li {list-style: square outside; margin-left: 1em; padding-bottom: .5em; }
 div#sustainability_main p + ul { margin-bottom: 1em; }
-/* Portfolio Page Sidebar */
-div#portfolio_photos { margin-top: 3.7em; margin-right: 1em; text-align: center; }
-div#portfolio_photos img { margin-bottom: .5em; }
 /* About Page Well */
 div#about_photos { overflow: auto; margin: 2em 0; }
 div#about_photos.well { width: 88%; background-color: #F4EEE1; border-color: #E2DBCD; }
 div#about_photos li { display: inline-block; margin-right: 1.5em; } 
 div#about_photos li:last-child { margin-right: 0; }
 div#about_photos li img { float: left; }
-
 /* Alerts and Messages 
 ----------------------------------------------------------------------------------------------------*/
 /* Alert Styles */
@@ -644,7 +586,6 @@ div.notice a:active { color:#000; }
 .conf-call-title a, .conf-call-title a:link, .conf-call-title a:visited { text-decoration:none; }
 .conf-call-title a:hover { color:#000; }
 #conf-call img { float:right; }
-
 /* Footer 
 ----------------------------------------------------------------------------------------------------*/
 /* Sticky Footer */
@@ -665,7 +606,6 @@ footer div#site_search h3 { line-height: 2.75; }
 footer h3.darker { color: #6d6e71; }
 footer p, footer li { line-height: 1.4; }
 footer li { font-size: 0.8em; }
-
 /* Media Queries
 ----------------------------------------------------------------------------------------------------*/
 @media (min-width:1800px) { 
@@ -689,7 +629,6 @@ footer li { font-size: 0.8em; }
 }
 @media (max-width:1400px) { 
 	div[id*="_img"] { margin: 0; background-position: -124px 0!important; }
-
 	div.navbar_wrapper, 
 	main.content > div.container_12, 
 	div.secondary, 
@@ -728,7 +667,6 @@ footer li { font-size: 0.8em; }
 @media (max-width:1104px) { 
 	div#footercol5 { position: relative; } 
 }
-
 /*  Microsites
 ----------------------------------------------------------------------------------------------------*/
 @import url(micro.css); 
