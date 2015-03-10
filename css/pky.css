@@ -463,39 +463,26 @@ body.map #wrap { background: url('../img/map_bg.png') repeat-y top center #f4eee
 /* Placement of Market Names on Map */
 div.map_image { width: 610px; height: 390px; position: relative; display: block; background-image: url('../img/map_markets.png'); background-position: 0 0; background-repeat: no-repeat; }
 /* Market Name Styles */
-a.map_link { position: absolute; font-weight: 500; font-size: .875em; letter-spacing: .02em; color: #000; text-transform: uppercase; text-align: center; }
-a.map_link { background-image: url('../img/map_flag.gif'); background-repeat: no-repeat; background-position: bottom center; } 
-a.map_link:hover { text-decoration: none; color: #002f56; background-image: url('../img/map_flag_hover.gif'); }
+a.map_link { position: absolute; font-weight: 400; font-size: .875em; letter-spacing: .02em; color: #6d6e71; text-transform: uppercase; text-align: center;   text-shadow: 0px 0px 1px #FFFFFF, 1px 1px 5px #FFFFFF; }
+a.map_link { background-image: url('../img/map_flag_a.gif'); background-repeat: no-repeat; background-position: bottom center; } 
+a.map_link:hover { text-decoration: none; color: #002f56; background-image: url('../img/map_flag_h.gif'); }
 /* Market Positioning Tweaks */
 a.map_link#phoenix { width: 59px; height: 32px; top: 227px; left: 101px; }
 a.map_link#austin { width: 47px; height: 32px; top: 294px; left: 284px; }
-a.map_link#houston { width: 67px; height: 32px; top: 322px; left: 300px; line-height: 2.75; background-position: top; }
+a.map_link#houston { width: 67px; height: 32px; top: 322px; left: 300px; line-height: 3.25; background-position: top; }
 a.map_link#jackson { width: 58px; height: 32px; top: 261px; left: 360px; }
-a.map_link#philadelphia { width: 85px; height: 32px; top: 118px; left: 502px; }
+a.map_link#philadelphia { width: 85px; height: 32px; top: 118px; left: 502px; letter-spacing: .05em; }
 a.map_link#charlotte { width: 78px; height: 32px; top: 204px; left: 456px; }
 a.map_link#atlanta { width: 57px; height: 32px; top: 237px; left: 432px; }
 a.map_link#jacksonville { width: 92px; height: 32px; top: 275px; left: 455px; }
-a.map_link#orlando { width: 89px; height: 14px; top: 321px; left: 501px; background-position: left 1px; line-height: 1; }
+a.map_link#orlando { width: 91px; height: 14px; top: 321px; left: 501px; background-position: left 1px; line-height: 1; }
 a.map_link#tampa { width: 70px; height: 14px; top: 326px; left: 427px; line-height: 1; background-position: right; }
-a.map_link#ft_lauderdale { width: 138px; height: 14px; top: 345px; left: 524px; background-position: left 1px; line-height: 1; }
+a.map_link#ft_lauderdale { width: 142px; height: 14px; top: 345px; left: 524px; background-position: left 1px; line-height: 1; }
 a.map_link#miami { width: 66px; height: 16px; top: 360px; left: 524px; background-position: left 1px; line-height: 1; }
-/* Market Name Postitioning Tweaks */
-/*a.map_link#houston {  }
-a#austin, a#houston, a#philadelphia, a#charlotte, a#atlanta, a#jacksonville, a#orlando, a#tampa, a#ft_lauderdale { position: absolute; }
-a#phoenix { top: 227px; left: 94px; }
-a#austin { right: 20px; }
-a#houston { bottom: 0px; right: 12px; }
-a#philadelphia { right: 0; }
-a#charlotte { top: -6px; }
-a#atlanta { top: 18px; }
-a#jacksonville { left: 22px; }
-a#orlando { left: 27px; }
-a#tampa { top: -3px; }
-a#miami div { left: 12px; top: -3px; }*/
-/* Portfolio Page Sidebar */
+/* Portfolio Page 
 div#portfolio_photos { margin-top: 3.7em; margin-right: 1em; text-align: center; }
 div#portfolio_photos img { margin-bottom: .5em; }
-/* Alternate Portfolio Template Overrides */
+/* Portfolio Template Overrides */
 .map_image { height: 392px; }
 div#portfolio_photos { width: 125px; margin-top: 0; }
 div#portfolio_assets th { padding-top: 0; }
