@@ -238,6 +238,10 @@ td.building_sqft { text-align: right; min-width: 100px; }
 /* Search Results Description Max Width */
 div#search_results table td { padding: .5em 1em 0 1em; }
 div#search_results table td.space_desc { max-width: 20em; padding-right: 1em; }
+/* Search Page */
+div#search_page section.grid_10 { margin-bottom: 2em; display: block; }
+div#search_page section.grid_10 p { margin-bottom: 0; }
+div#search_page hr.grid_2 { margin: 2em 0 1.5em; height: 2px; clear: both; float: none; display: block; border-top: 2px solid #004677; background-color: #004677; }
 /* Market Pages
 ----------------------------------------------------------------------------------------------------*/
 /* Global */
