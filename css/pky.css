@@ -334,19 +334,34 @@ body.corporate #sig_properties_img { background-image: url('../img/headers/1600x
 /* Property Info Global
 ----------------------------------------------------------------------------------------------------*/
 /* Property Data -- Global */
+/* Property Data -- Global */
 div.property_data { font-size: 0.875em; overflow: hidden; } 
 div.property_data dt { margin-top: 1em; color: #004677; text-transform: uppercase; } 
 div.property_data dt:first-child { margin-top: 0; } 
 div.property_data dd { margin-bottom: .25em; line-height: 1.25; }
 /* Icons */
-div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before, a.preview:before, a.email:before, a.share:before, a.print:before, a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
+div#property [href$=".pdf"]:before,
+div#property a[href$=".pdf"]:before,
+div#search_results [href$=".pdf"]:before,
+div#search_results a[href$=".pdf"]:before,
+a.preview:before,
+a.email:before,
+a.share:before,
+a.print:before,
+a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
 div#property [href$=".pdf"]:focus, div#property a[href$=".pdf"]:focus, a.preview:focus, a.email:focus, a.share::focus, a.print:focus, a.view_map:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
-div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before,
+div#property [href$=".pdf"]:before,
+div#property a[href$=".pdf"]:before,
+div#search_results [href$=".pdf"]:before,
+div#search_results a[href$=".pdf"]:before { background-position: 0 -44px; }
 a.print:before { background-position: 0 -60px; }
 a.view_map:before { background-position: 0 -76px; }
 a.email:before { background-position: 0 -92px; }
 a.share:before { background-position: 0 -108px; }
-div#property [href$=".pdf"]:hover:before, div#property a[href$=".pdf"]:hover:before,
+div#property [href$=".pdf"]:hover:before,
+div#property a[href$=".pdf"]:hover:before,
+div#search_results [href$=".pdf"]:hover:before,
+div#search_results a[href$=".pdf"]:hover:before { background-position: -16px -44px; }
 a.print:hover:before { background-position: -16px -60px; }
 a.view_map:hover:before { background-position: -16px -76px; }
 a.email:hover:before { background-position: -16px -92px; }
