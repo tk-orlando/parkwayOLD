@@ -102,8 +102,9 @@ div#quick_search_market, div#quick_search_space { margin-top: -2px; }
 div#quick_search p { color: #FFF; }
 keygen, select, select#market, select#sq_footage,
 /* Footer Search Field */
-footer textarea { width: 11em; background: white; border: 1px solid #9a9a98; padding: 0 0 0 0.5em; -webkit-border-radius: 0; border-radius: 0 0 0 0; color: #b5b5b3; -webkit-appearance: none; }
+footer input { width: 11em; background: white; border: 1px solid #9a9a98; padding: 0 0 0 0.5em; -webkit-border-radius: 0; border-radius: 0 0 0 0; color: #b5b5b3; -webkit-appearance: none; }
 div#quick_search_submit a { color: #FFF; width: 40px; height: 20px; display: block; }
+input#searchbox { margin-right: 1em; margin-bottom: .5em; float: left; }
 a#search_submit:after,
 /* Footer Search Button */ 
 div#site-search a:after { margin-left: .5em; width: 8px; height: 9px; content: ""; background: url('../img/arrow-go.png') no-repeat 0 0; display: inline-block; }
