@@ -102,8 +102,9 @@ div#quick_search_market, div#quick_search_space { margin-top: -2px; }
 div#quick_search p { color: #FFF; }
 keygen, select, select#market, select#sq_footage,
 /* Footer Search Field */
-footer textarea { width: 11em; background: white; border: 1px solid #9a9a98; padding: 0 0 0 0.5em; -webkit-border-radius: 0; border-radius: 0 0 0 0; color: #b5b5b3; -webkit-appearance: none; }
+footer input { width: 11em; background: white; border: 1px solid #9a9a98; padding: 0 0 0 0.5em; -webkit-border-radius: 0; border-radius: 0 0 0 0; color: #b5b5b3; -webkit-appearance: none; }
 div#quick_search_submit a { color: #FFF; width: 40px; height: 20px; display: block; }
+input#searchbox { margin-right: 1em; margin-bottom: .5em; float: left; }
 a#search_submit:after,
 /* Footer Search Button */ 
 div#site-search a:after { margin-left: .5em; width: 8px; height: 9px; content: ""; background: url('../img/arrow-go.png') no-repeat 0 0; display: inline-block; }
@@ -218,7 +219,7 @@ table a { color: #6d6e71; }
 section#market_space table, div#property table, div#search_results table, div#portfolio_assets table 
 { font-size: .9em; margin-left: -0.75em; }
 section#market_space th, div#property th, div#search_results th, div#portfolio_assets th 
-{ width: auto; padding: 1em 1em 0 0; text-transform: uppercase; color: #004677; font-weight: 500; line-height: 1.1; }
+{ width: auto; padding: 1em 0 0 0; text-transform: uppercase; color: #004677; font-weight: 500; line-height: 1.1; }
 section#market_space table th, div#property table th, div#search_results table th, div#portfolio_assets table th 
 { padding-left: 1em; }
 section#market_space table td, div#property table td, div#search_results table td, div#portfolio_assets table td 
@@ -338,41 +339,47 @@ div.property_data dt { margin-top: 1em; color: #004677; text-transform: uppercas
 div.property_data dt:first-child { margin-top: 0; } 
 div.property_data dd { margin-bottom: .25em; line-height: 1.25; }
 /* Icons */
-div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before, a.preview:before, a.email:before, a.share:before, a.print:before, a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
+div#property [href$=".pdf"]:before,
+div#property a[href$=".pdf"]:before,
+div#search_results [href$=".pdf"]:before,
+div#search_results a[href$=".pdf"]:before,
+a.preview:before,
+a.email:before,
+a.share:before,
+a.print:before,
+a.view_map:before { content: ""; width: 16px; height: 16px; float: left; margin-right: .5em; background-image: url('../img/sprites.png'); background-repeat: no-repeat; }
 div#property [href$=".pdf"]:focus, div#property a[href$=".pdf"]:focus, a.preview:focus, a.email:focus, a.share::focus, a.print:focus, a.view_map:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; color: #2a6496; text-decoration: underline; }
-div#property [href$=".pdf"]:before, div#property a[href$=".pdf"]:before,
+div#property [href$=".pdf"]:before,
+div#property a[href$=".pdf"]:before,
+div#search_results [href$=".pdf"]:before,
+div#search_results a[href$=".pdf"]:before { background-position: 0 -44px; }
 a.print:before { background-position: 0 -60px; }
 a.view_map:before { background-position: 0 -76px; }
 a.email:before { background-position: 0 -92px; }
 a.share:before { background-position: 0 -108px; }
-div#property [href$=".pdf"]:hover:before, div#property a[href$=".pdf"]:hover:before,
+div#property [href$=".pdf"]:hover:before,
+div#property a[href$=".pdf"]:hover:before,
+div#search_results [href$=".pdf"]:hover:before,
+div#search_results a[href$=".pdf"]:hover:before { background-position: -16px -44px; }
 a.print:hover:before { background-position: -16px -60px; }
 a.view_map:hover:before { background-position: -16px -76px; }
 a.email:hover:before { background-position: -16px -92px; }
 a.share:hover:before { background-position: -16px -108px; }
-
 /* Available Space Buttons 
 ----------------------------------------------------------------------------------------------------*/
 #search_results .btn 
-/* ==== REMOVE ME ==== *//*, #property .btn*/ /* ==== REMOVE ME ==== */
 { width: 232px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; border-radius: 0; display: block; clear: both; }
-/* ==== REMOVE ME ==== */ /*#search_results .btn { float: left; margin-top: -18px; margin-left: -1px; }*/ /* ==== REMOVE ME ==== */ 
 #search_results .btn { float: none; margin-top: 0; }
-/* ==== REMOVE ME ==== */ /*#property .btn { border-bottom: 0 none; }*/  /* ==== REMOVE ME ==== */
 #search_results .btn:hover 
-/* ==== REMOVE ME ==== *//*, #property .btn:hover *//* ==== REMOVE ME ==== */
 { color: #6d6e71; text-decoration: underline; }
 #search_results .btn:hover, 
-/* ==== REMOVE ME ==== */ /*#property .btn:hover*/ /* ==== REMOVE ME ==== */
 { color: #DEF0FD; text-decoration: underline; }
 #search_results .btn:after 
-/* ==== REMOVE ME ==== *//*, #property .btn:after*/ /* ==== REMOVE ME ==== */
 { width: 9px; height: 8px; margin-left: .3em; background-position: -37px 0; display: inline-block; float: none; }
 #search_results .btn:active, #search_results .btn.active, 
-/* ==== REMOVE ME ==== */ /*#property .btn:active, #property .btn.active*/ /* ==== REMOVE ME ==== */ 
 { box-shadow: 0 0 0; }
 #search_results .btn { padding: .75em; }
-#search_results .btn span { display: block; /*line-height: 1;*/ }
+#search_results .btn span { display: block; }
 /* Single Property Listings 
 ----------------------------------------------------------------------------------------------------*/
 div#property { display: block; position: relative; overflow: auto; }
@@ -440,10 +447,6 @@ div#search_results h3 { font-family: Times, 'Times New Roman', serif; font-style
 section.property_preview.grid_12 { margin-left: 0; padding-bottom: 1em; margin-bottom: .75em; border-bottom: 1px solid #EEE; }
 div[id*="available_space"] { clear: both; }
 div[id*="available_space"] > .grid_12 { margin-left: 0; float: none; clear: both; }
-/* Property Image */
-/* ==== REMOVE ME ==== */
-/*.container_12 #search_results .property_preview_img.grid_3 { height: 180px; width: 230px; background: #CCC; margin-right: 1em; float: left; overflow: hidden; }
-*//* ==== REMOVE ME ==== */
 div#search_results .property_preview_img.grid_2 { height: 162px; width: 135px; background: #CCC; margin-right: 1em; float: left; overflow: hidden; }
 /* Search Results Property Data Global Overrides */
 div#search_results div.property_data dt { display: block; float: left; margin-top: 0; }
@@ -484,9 +487,6 @@ a.map_link#orlando { width: 91px; height: 14px; top: 321px; left: 501px; backgro
 a.map_link#tampa { width: 70px; height: 14px; top: 326px; left: 427px; line-height: 1; background-position: right; }
 a.map_link#ft_lauderdale { width: 142px; height: 14px; top: 345px; left: 524px; background-position: left 1px; line-height: 1; }
 a.map_link#miami { width: 66px; height: 16px; top: 360px; left: 524px; background-position: left 1px; line-height: 1; }
-/* Portfolio Page 
-div#portfolio_photos { margin-top: 3.7em; margin-right: 1em; text-align: center; }
-div#portfolio_photos img { margin-bottom: .5em; }
 /* Portfolio Template Overrides */
 .map_image { height: 392px; }
 div#portfolio_photos { width: 125px; margin-top: 0; }
