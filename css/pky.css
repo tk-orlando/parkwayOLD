@@ -661,6 +661,3 @@ footer li { font-size: 0.8em; }
 @media (max-width:1104px) { 
 	div#footercol5 { position: relative; } 
 }
-/*  Microsites
-----------------------------------------------------------------------------------------------------*/
-@import url(micro.css); 

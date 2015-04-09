@@ -1,4 +1,22 @@
-.micro li { margin:0 0 5px 16px; line-height:1.3; color:#000; }
+header#microsite { background-image: url('../img/headers/bg/header_bg.jpg'); }
+div#microsite_img { background-image: url('../img/headers/1600x224/header_about.jpg'); }
+	header#microsite div#menu { width: 90%; }
+	header#microsite div#menu .menu-row .menu-sub { min-width: 162px; }
+	header#microsite .container_12 { overflow: auto; }
+	header#microsite div.grid_8 { margin-top: 4em; }
+	header#microsite div.grid_8 h2 { margin-right: 1em; margin-bottom: 0; font-size: 2em; font-weight: 500; color: #FFFFFF; }
+	header#microsite div.grid_8 h3 { margin-right: 1em; font-size: 1em; color: #FFFFFF; float: left; }
+	header#microsite div.grid_8 textarea { height: 24px; margin-right: 1em; resize: none; }
+	header#microsite div.grid_8 a[role="button"] { color: #FFFFFF; vertical-align: top; }
+	header#microsite div#site-search { height: 24px; overflow: hidden; }
+	header#microsite div#site-search a:after { height: 18px; background: url('../img/arrow-go.png') no-repeat 0 0; }
+body.microsite main.content div.container_12 { padding-top: 2em; }
+	body.microsite main.content div.grid_9 { padding: 0 0 0 6em; }
+	body.microsite div#property-slide { margin-top: 8px; margin-bottom: 1em; }
+
+body.microsite footer div.grid_4 { padding-top: 2em; }
+
+.micro li { margin: 0 0 5px 16px; line-height: 1.3; color: #000; }
 .micro img { margin-top:6px; margin-bottom:20px; }
 .micro .left-sidebar { min-height:450px; background: #fff; }
 
@@ -7,13 +25,13 @@
 .micro td:hover { color:inherit; cursor:inherit; }
 
 /* Quick Links Microsite */
-#quick-links { width:600px; display:block; position:relative; }
-#quick-links li { width:84px; margin:0; padding:0 30px 0 0; text-align:center; line-height:1.1em; float:left; }
-#quick-links li.last { padding:0; }
-#quick-links li img, #quick-links li span { padding:0 10px; margin-bottom:10px;}
-#quick-links li span { float:left; }
-#quick-links a { text-align:center; color:#004677; text-transform:uppercase: }
-#quick-links a:hover { color:#000; text-decoration:underline; }
+body.microsite #quick-links { display: block; position: relative; }
+	body.microsite #quick-links li { width: 64px; margin: 0 2em 0 0; padding: 0; line-height: 1.1em; float: left; }
+	body.microsite #quick-links li.last { margin: 0; }
+	body.microsite #quick-links li img, 
+	body.microsite #quick-links li span { padding: 0; margin-bottom: 10px; float: left; line-height: 1.1; text-align: left; }
+	body.microsite #quick-links a { color: #004677; text-transform: uppercase; } 
+	body.microsite #quick-links a:hover { color: #000; text-decoration: underline; }
 
 #slider-micro { width:600px; float:left; overflow:hidden; }
 #slider-micro li.bjqs-slide { margin-left:-16px; }
@@ -32,10 +50,10 @@
 .micro > #building-form > li { text-transform:uppercase; color:#000; }
 .micro > .left-sidebar li a { text-decoration:underline!important; color:#000; }
 
-#tenant-login { padding:0; margin:16px 0 0 -32px; width:320px; background-color:#C4CFCA; text-align:center; float:left; }
-#tenant-login h3 { padding-top:30px; padding-bottom:30px; }
-#tenant-login h3 a { color:#004677; font-size:1.1em; text-decoration:none; text-shadow:1px 1px 1px #FFFFFF; }
-#tenant-login h3 a:hover { text-decoration:underline; }
+#tenant-login { padding: 0; margin: 1em 0; width: 100%; background-color: #C4CFCA; text-align:center; float:left; }
+#tenant-login h3 { padding-top: 2em; padding-bottom: 2em; }
+#tenant-login h3 a { color: #004677; font-size: 1.1em; text-decoration: none; text-shadow: 1px 1px 1px #FFFFFF; }
+#tenant-login h3 a:hover { text-decoration: underline; }
 
 /* Microsite Local Events */
 ul#local-events { width:90%; margin:0 0 0 -15px!important; }
