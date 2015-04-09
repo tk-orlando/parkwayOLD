@@ -182,13 +182,14 @@ body.home .slide_copy > div.top.limegreen { top: 10px; }
 body.home .slide_copy > div.white.bottom { bottom: -26px; }
 body.home .rsArrowLeft .rsArrowIcn,
 body.home .rsArrowRight .rsArrowIcn { top: 30%; }
+div#branding { width: 240px; margin-left: 2em; }
 div#branding_logo, div#pkygreen { margin: 0 auto; }
 div#branding_logo { margin-bottom: 2em; background: url('../img/sprites.png') no-repeat -278px 0; width: 138px; height: 113px; }
 div#branding_logo_white { background: url('../img/sprites.png') no-repeat -141px 0; width: 138px; height: 113px; }
 div#pkygreen { height: 60px; font-family: Times, 'Times New Roman', serif; font-style: italic; font-size: 1.375em; }
 span.pkygreen_a, span.pkygreen_b { position: absolute; }
-span.pkygreen_a { right: 2.2em; }
-span.pkygreen_b { right: 1.25em; font-family: 'futura-pt', Arial, Helvetica, sans-serif; font-style: normal; text-transform: uppercase; }
+span.pkygreen_a { left: 0; }
+span.pkygreen_b { right: 0; font-family: 'futura-pt', Arial, Helvetica, sans-serif; font-style: normal; text-transform: uppercase; }
 /* Secondary Div */
 div.secondary_wrap { background: #d3c8b5; }
 div.secondary { width: 1104px; padding: 1em 0; margin: 0px auto; overflow: hidden; }
@@ -490,6 +491,7 @@ a.map_link#miami { width: 66px; height: 16px; top: 360px; left: 524px; backgroun
 /* Portfolio Template Overrides */
 .map_image { height: 392px; }
 div#portfolio_photos { width: 125px; margin-top: 0; }
+div#portfolio_photos p.blue { font-size: .875em; line-height: 1.1; margin-top: .5em; }
 div#portfolio_assets th { padding-top: 0; }
 /* Available Markets Sidebar */
 #available_markets dl { margin-right: 1em; margin-left: 1em; border-left: 1px solid white; }
