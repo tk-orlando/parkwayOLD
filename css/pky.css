@@ -368,17 +368,11 @@ a.email:hover:before { background-position: -16px -92px; }
 a.share:hover:before { background-position: -16px -108px; }
 /* Available Space Buttons 
 ----------------------------------------------------------------------------------------------------*/
-#search_results .btn 
-{ width: 232px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; border-radius: 0; display: block; clear: both; }
+#search_results .btn { width: 232px; padding: 0.75em; color: #FFF; font-weight: 500; text-align: center; background-color: #004677; border-color: #DEF0FD; border-radius: 0; display: block; clear: both; }
 #search_results .btn { float: none; margin-top: 0; }
-#search_results .btn:hover 
-{ color: #6d6e71; text-decoration: underline; }
-#search_results .btn:hover, 
-{ color: #DEF0FD; text-decoration: underline; }
-#search_results .btn:after 
-{ width: 9px; height: 8px; margin-left: .3em; background-position: -37px 0; display: inline-block; float: none; }
-#search_results .btn:active, #search_results .btn.active, 
-{ box-shadow: 0 0 0; }
+#search_results .btn:hover { color: #9d9b98; text-decoration: underline; }
+#search_results .btn:after { width: 9px; height: 8px; margin-left: .3em; background-position: -37px 0; display: inline-block; float: none; }
+#search_results .btn:active, #search_results .btn.active { box-shadow: 0 0 0; }
 #search_results .btn { padding: .75em; }
 #search_results .btn span { display: block; }
 /* Single Property Listings 
