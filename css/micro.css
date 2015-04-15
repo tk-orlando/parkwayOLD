@@ -4,37 +4,50 @@ div#microsite_img { background-image: url('../img/headers/1600x224/header_about.
 	header#microsite div#menu .menu-row .menu-sub { min-width: 162px; }
 	header#microsite .container_12 { overflow: auto; }
 	header#microsite div.grid_8 { margin-top: 4em; }
-	header#microsite div.grid_8 h2 { margin-right: 1em; margin-bottom: 0; font-size: 2em; font-weight: 500; color: #FFFFFF; }
+	header#microsite div.grid_8 h1 { margin-right: 1em; margin-bottom: 0; font-size: 2em; font-weight: 500; color: #FFFFFF; text-transform: uppercase; }
 	header#microsite div.grid_8 h3 { margin-right: 1em; font-size: 1em; color: #FFFFFF; float: left; }
 	header#microsite div.grid_8 textarea { height: 24px; margin-right: 1em; resize: none; }
 	header#microsite div.grid_8 a[role="button"] { color: #FFFFFF; vertical-align: top; }
 	header#microsite div#site-search { height: 24px; overflow: hidden; }
 	header#microsite div#site-search a:after { height: 18px; background: url('../img/arrow-go.png') no-repeat 0 0; }
 body.microsite main.content { padding-bottom: 130px; }
+	body.microsite main.content ul { margin-bottom: .5em; }
 	body.microsite main.content li { padding-bottom: .5em;  margin-left: 1em; text-indent: -1em; list-style: square inside; }
 	body.microsite main.content div.container_12 { padding-top: 2em; }
 	body.microsite main.content h2 { line-height: 1.2; }
-	
+	body.microsite main.content dt { margin-bottom: .5em; color: #004677; font-size: 1.2em; }
+	body.microsite main.content dd { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #eee; }
+	body.microsite main.content table th,
+	body.microsite main.content table td { padding: .25em 1em .25em 0; text-align: left; }
+	body.microsite main.content thead { border-bottom: 1px solid #eee; }
+	body.microsite main.content table th { min-width: 150px; color: #004667; }
 body.microsite div#property-slide { margin: 8px 1em 1em 0; float: right; }
+	body.microsite main.content div#property-slide li { list-style: none; }
 
 /* Quick Links Microsite */
-body.microsite #quick-links { display: block; position: relative; }
-	body.microsite #quick-links li { width: 64px; margin: 0 2em 0 0; padding: 0; line-height: 1.1em; float: left; }
+/*body.microsite #quick-links { display: block; position: relative; }
+	body.microsite #quick-links li { margin: 0 0 1em; padding: 0; font-size: .875em; line-height: 1.1em; text-indent: 0; list-style: none; float: none; clear: both; overflow: auto; }
 	body.microsite #quick-links li.last { margin: 0; }
 	body.microsite #quick-links li img, 
-	body.microsite #quick-links li span { padding: 0; margin-bottom: 10px; float: left; line-height: 1.1; text-align: left; }
+	body.microsite #quick-links li span { padding: 0; margin-bottom: 5px; display: block; float: none; line-height: 1.1; text-align: left; }
 	body.microsite #quick-links a { color: #004677; text-transform: uppercase; } 
-	body.microsite #quick-links a:hover { color: #000; text-decoration: underline; }
+	body.microsite #quick-links a:hover { color: #000; text-decoration: underline; }*/
 
 body.microsite footer,
 	body.microsite footer div#footer_content,
-	body.microsite footer div#footercol5 { height: 130px; }
+	body.microsite footer div#footercol5 { height: 130px; font-size: 1em; }
 	body.microsite footer { margin-top: -130px; }
-body.microsite footer div.grid_4 { padding-top: 2em; }
+body.microsite footer div.grid_9 { padding-top: 2em; }
+	body.microsite footer div.grid_9 ul,
+	body.microsite footer div.grid_9 ul li,
+	body.microsite footer div.grid_9 h3 { float: left; }
+	body.microsite footer div.grid_9 ul li { font-size: .9375em; }
+	body.microsite footer div.grid_9 h3 { font-size: 1em; text-transform: none; }
+	body.microsite footer div.grid_9 ul li,
+	body.microsite footer div.grid_9 ul li img { margin-right: .25em; display: inline-block; float: left; clear: none; }
+	body.microsite footer div.grid_9 ul li img { margin-top: -.25em; margin-bottom: 0; margin-left: .5em; }
 
-
-#tenant-login { padding: 1em; margin: 0 0 1em; width: 100%; background-color: #004677; text-align: center; float: left; }
-#tenant-login .btn { padding: 0; background: none; border: 0; }
+#tenant-login .btn { padding: 1em; margin: 0 0 1em; width: 100%; background-color: #004677; text-align: center; float: left; border-radius: 0; }
 #tenant-login .btn a { color: #FFFFFF; font-size: 1.1em; text-decoration: none; text-transform: uppercase; }
 #tenant-login .btn a:hover { color: #9d9b98; text-decoration: underline; }
 
