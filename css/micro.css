@@ -51,26 +51,48 @@ body.microsite footer div.grid_9 { padding-top: 2em; }
 #tenant-login .btn a { color: #FFFFFF; font-size: 1.1em; text-decoration: none; text-transform: uppercase; }
 #tenant-login .btn a:hover { color: #9d9b98; text-decoration: underline; }
 
+/* Handbook */
+/*body.microsite ul.collapsible-content .section a span.collapsible-header { font-size: 1.3em; text-transform: uppercase; }
+	body.microsite .nc li ul li { font-size: 0.75em; list-style: square inside none; margin-left: 30px; text-indent: -12px;}
+	body.microsite .nc li ol li ul li { font-size: 0.8em; }
+	body.microsite .nc ol li table, .nc ul li table { font-size: 1em; }
 
-.micro img { margin-top:6px; margin-bottom:20px; }
-.micro .left-sidebar { min-height:450px; background: #fff; }
+body.microsite .collapsible-content > tbody > tr:nth-child(odd),
+body.microsite .collapsible-content > tbody > tr:nth-child(even) { background: #FFF; color: #000; }*/
+body.microsite ul.nav-handbook { margin: 20px 0 0 32px; padding: 0; list-style: none; }
+body.microsite ul.nav-handbook li { margin: 0; list-style: none; }
+ul.nav-handbook li ul { margin:0 0 5px 2px; padding: 0; list-style: none; font-size: .9em; font-weight: normal; }
+ul.nav-handbook a, ul.nav-handbook a:link, ul.nav-handbook a:visited { line-height: 1.8em; text-decoration: none; }
+ul.nav-handbook a.section,
+ul.collapsible-content a.section { margin-bottom: 5px; padding-left: 18px; background: url(../img/arrow-up.png) 0 4px no-repeat; font-size:1.1em; line-height:1.5em; }
+ul.nav-handbook a.section.open,
+ul.collapsible-content a.section.open { background: url(../img/arrow-down.png) 0 4px no-repeat; }
+ul.nav-handbook li ul li a { padding-left: 16px; font-size: 1.1em; text-transform: uppercase; color: #000; }
+ul.collapsible-content li ul li a { padding-left: 16px; color: #000; }
+ul.nav-handbook li ul li a.current,
+ul.collapsible-content li ul li a.current { color: #333; }
+ul.nav-handbook a:hover,
+ul.collapsible-content a:hover { text-decoration: underline; }
 
-.micro .right-col-content { background:#FFF; width:564px; min-height:450px; padding-bottom:10%; float:right; }
-.micro .right-col-content ul, .micro .full-width-content ul { margin:0 0 15px; font-size:.875em; line-height:1em; overflow:hidden; }
-.micro td:hover { color:inherit; cursor:inherit; }
+.micro img { margin-top:6px; margin-bottom: 20px; }
+.micro .left-sidebar { min-height: 450px; background: #fff; }
 
-#slider-micro { width:600px; float:left; overflow:hidden; }
-#slider-micro li.bjqs-slide { margin-left:-16px; }
+.micro .right-col-content { background: #FFF; width: 564px; min-height: 450px; padding-bottom: 10%; float: right; }
+.micro .right-col-content ul, .micro .full-width-content ul { margin: 0 0 15px; font-size: .875em; line-height: 1em; overflow: hidden; }
+.micro td:hover { color: inherit; cursor: inherit; }
+
+#slider-micro { width: 600px; float: left; overflow: hidden; }
+#slider-micro li.bjqs-slide { margin-left: -16px; }
 
 /* Microsite Left Sidebar */
-.micro > .left-sidebar { width:302px; min-height:390px; padding-bottom:10%; padding:0; }
-.micro > .left-sidebar h2, .left-sidebar-micro h3, .left-sidebar-micro h4, .left-sidebar-micro p { margin:0; padding:0 32px; }
+.micro > .left-sidebar { width: 302px; min-height: 390px; padding-bottom: 10%; padding: 0; }
+.micro > .left-sidebar h2, .left-sidebar-micro h3, .left-sidebar-micro h4, .left-sidebar-micro p { margin: 0; padding: 0 32px; }
 .micro > .left-sidebar h2, .left-sidebar-micro h3 { margin-top:32px; }
-.micro > .left-sidebar h2 { line-height:1.3em; }
-.micro > .left-sidebar h3 { line-height:1.2em; }
-.micro > .left-sidebar h4 { line-height:1em; }
-.micro > .left-sidebar p { margin-bottom:16px; }
-.micro > .left-sidebar hr { margin:16px 32px; }
+.micro > .left-sidebar h2 { line-height: 1.3em; }
+.micro > .left-sidebar h3 { line-height: 1.2em; }
+.micro > .left-sidebar h4 { line-height: 1em; }
+.micro > .left-sidebar p { margin-bottom: 16px; }
+.micro > .left-sidebar hr { margin: 16px 32px; }
 .micro > .left-sidebar h2 + h3 { margin-top:8px; font-size:1.1em; letter-spacing:normal; }
 .micro > .left-sidebar > ul { padding:10px 32px 0; }
 .micro > #building-form > li { text-transform:uppercase; color:#000; }
@@ -140,26 +162,4 @@ table#table-retail > tbody > tr > th { padding:0; text-align:left; color:#004677
 .micro .collapsible-content ul { font-size:1.2em; }
 li.section, ul#rules li { width:90%; padding:5px 0; border-bottom:1px solid #CCC; }
 ul.nc { margin:10px 0 0 2px!important; }
-.micro ul.collapsible-content .section a span.collapsible-header { font-size:1.3em; text-transform:uppercase; }
-.section { text-decoration:none; }
-.nc li ul li { font-size:0.75em; list-style:square inside none; margin-left:30px; text-indent:-12px;}
-.nc li ol li ul li { font-size: 0.8em; }
-.nc ol li table, .nc ul li table { font-size:1em; }
 
-.collapsible-content > tbody > tr:nth-child(odd),
-.collapsible-content > tbody > tr:nth-child(even) { background:#FFF; color:#000; }
-
-aside > ul.nav-handbook li { margin:0; }
-ul.nav-handbook { margin:20px 0 0 32px; padding:0; list-style:none; }
-ul.nav-handbook li ul { margin:0 0 5px 2px; padding:0; list-style:none; font-size:.9em; font-weight:normal; }
-ul.nav-handbook a, ul.nav-handbook a:link, ul.nav-handbook a:visited { line-height:1.8em; text-decoration:none; }
-ul.nav-handbook a.section,
-ul.collapsible-content a.section { margin-bottom:5px; padding-left:18px; background:url(../img/arrow-up.png) 0 4px no-repeat; font-size:1.1em; line-height:1.5em; }
-ul.nav-handbook a.section.open,
-ul.collapsible-content a.section.open { background:url(../img/arrow-down.png) 0 4px no-repeat; }
-ul.nav-handbook li ul li a { padding-left:16px; font-size:1.1em; text-transform:uppercase; color:#000; }
-ul.collapsible-content li ul li a { padding-left:16px; color:#000; }
-ul.nav-handbook li ul li a.current,
-ul.collapsible-content li ul li a.current { color:#333; }
-ul.nav-handbook a:hover,
-ul.collapsible-content a:hover { text-decoration:underline; }
