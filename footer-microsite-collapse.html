@@ -5,11 +5,11 @@
 <script type="text/javascript">
     $(document).ready(function(){
       //Hide (Collapse) the nav options for all but current section
-      $('ul.nc', $('ul.nav-handbook')).hide();
+      $('ul.nc', $('ul.collapsible-content')).hide();
       //Set open class on current section link
-      $('ul.nav-handbook ul.current').prev().addClass('open');
+      $('ul.collapsible-content ul.current').prev().addClass('open');
       //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-      $('li.section a.section', $('ul.nav-handbook')).click(function(event){
+      $('li.section a.section', $('ul.collapsible-content')).click(function(event){
         event.preventDefault();
         $(this).toggleClass('open').next().slideToggle("slow");
       });

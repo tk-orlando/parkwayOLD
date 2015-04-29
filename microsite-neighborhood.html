@@ -1,0 +1,66 @@
+<!--#include file="header-microsite.html" -->
+<main class="content">
+	<div class="container_12">
+		<div class="grid_10">
+			<div class="right">
+				<a class="print" href="javascript:window.print();">Print this page</a>
+			</div><!-- .right -->
+			<h2>Neighborhood</h2>
+			<hr>
+			<div id="neighborhoodPopupDiv" style="display:none;">
+				<div class="google-popup">
+					<ul>
+						<li>
+							<img src="#IMAGE_URL#" alt="Property Thumb" width="32" height="37">
+							<p>
+								<a href="#LINK#" target="_blank">#NAME#</a><br>
+								#TITLE#<br>
+							</p>
+						</li>
+					</ul>
+				</div><!-- .google-popup -->
+			</div><!-- #neighborhoodPopupDiv -->
+			<div class="overviewMap grid_7" id="gmapContainer_6648" style="background-color:#CCC;"> 
+		        <script>!window.jQuery && document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"><\/script>')</script>
+		        <script>
+				// Prepare our google map rendering data
+				var meramedia = { GoogleMaps: {} };
+				meramedia.GoogleMaps.RenderSettings = {
+					Container: "gmapContainer_6648",
+					AutoFit: true,
+					MapContainer: "map_6648",
+					MapSettings: {"Markers":[{"Name":"House","Title":"850 North Jefferson Street, Jackson, MS 39202, USA","Icon":"/media/378383/misc.png","Position":"32.308175,-90.17452100000003","Latitude":"32.308175","Longitude":"-90.17452100000003","Link":null},{"Name":"Popeye's Chicken","Title":"986 High Street, Jackson, MS 39202, USA","Icon":"/media/378353/restaurant.png","Position":"32.30410003987551,-90.17401003918269","Latitude":"32.30410003987551","Longitude":"-90.17401003918269","Link":null},{"Name":"Governor's Mansion","Title":"300 East Capitol Street, Jackson, MS 39201, USA","Icon":"/media/378378/museum.png","Position":"32.300147095245116,-90.18347287258723","Latitude":"32.300147095245116","Longitude":"-90.18347287258723","Link":null},{"Name":"400 North Belt","Title":"413 East Capitol Street, Jackson, MS 39201, USA","Icon":"/media/378411/office.png","Position":"32.29929463711035,-90.18264675221064","Latitude":"32.29929463711035","Longitude":"-90.18264675221064","Link":null}],"Width":0,"Height":500,"MapOptions":{"center":"32.299403461999745,-90.18208885273555","zoom":17,"mapTypeId":"roadmap"},"CoreSettings":{"AllowCustomLinks":true}}
+				};
+
+				$(function () {
+					LoadMapsApi('RenderFrontendMap');
+				});
+				</script>
+		        <div class="gMap" id="map_6648" style="width:100%;height:500px;"></div>
+		        <script>!window.GoogleMap && document.write('<script src="//pky.com/umbraco/plugins/meramedia.GoogleMap.plugin/meramedia.GoogleMap.min.js"><\/script>');</script> 
+		        <script>typeof RenderFrontendMap == 'undefined' && document.write('<script src="//pky.com/umbraco/plugins/meramedia.GoogleMap.plugin/meramedia.MultiLocation.Frontoffice.Listener.min.js"><\/script>')</script> 
+		        <script>typeof RenderFrontendMap == 'undefined' && document.write('<script src="//pky.com/umbraco/plugins/meramedia.GoogleMap.plugin/meramedia.MultiLocation.Render.min.js"><\/script>')</script> 
+			</div><!-- #gmapContainer .grid_7 -->
+      
+			<div class="grid_3" id="search-map">
+		        <h3>Local Area Amenities</h3>
+		        <div id="searchForm" class="gsmsc-controls"></div>
+		        <div id="results"></div>
+		        <div id="poi">
+					<div class="hotspot"><img alt="Restaurants" src="//pky.com/media/378353/restaurant.png" width="20" height="25" />Restaurants</div>
+					<div class="hotspot"><img alt="Fine Dining" src="//pky.com/media/396287/fine_dining.png" width="20" height="25" />Fine Dining</div>
+					<div class="hotspot"><img alt="Coffee Shops" src="//pky.com/media/396282/coffee.png" width="20" height="25" />Coffee Shops</div>
+					<div class="hotspot"><img alt="Banks" src="//pky.com/media/396292/bank.png" width="20" height="25" />Banks</div>
+					<div class="hotspot"><img alt="Hotels" src="//pky.com/media/396312/hotel.png" width="20" height="25" />Hotels</div>
+					<div class="hotspot"><img alt="Parking" src="//pky.com/media/396297/parking.png" width="20" height="25" />Parking</div>
+					<div class="hotspot"><img alt="Transportation" src="//pky.com/media/378358/bus.png" width="20" height="25" />Transportation</div>
+					<div class="hotspot"><img alt="Shopping" src="//pky.com/media/378373/shopping.png" width="20" height="25" />Shopping</div>
+					<div class="hotspot"><img alt="Post Offices" src="//pky.com/media/396302/postal.png" width="20" height="25" />Post Offices</div>
+					<div class="hotspot"><img alt="Movie Theaters" src="//pky.com/media/396307/theater.png" width="20" height="25" />Movie Theaters</div>
+					<div class="hotspot"><img alt="Office Building" src="//pky.com/media/378411/office.png" width="20" height="25" />Office Building</div>
+				</div><!-- #poi
+		        <div class="infobox">Click on one of the Popular Search links above or enter a search term (e.g. ice cream) and click the search button.</div> -->
+			</div><!-- .grid_3 #search-map --> 
+		</div><!-- .grid_10 -->
+	</div><!-- .container_12 -->
+<!--#include file="footer-microsite-neighborhood.html" -->
